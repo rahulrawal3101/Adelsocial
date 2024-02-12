@@ -187,7 +187,7 @@ const Seo = () => {
 
                     </Grid>
                 </Box>
-                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: "10px" }}>
+                {/* <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: "10px" }}>
                     <Grid container xs={4} sx={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
                         <Grid item data-aos='fade-right' xs={12} sm={12} md={5.5} sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }} >
                            <Box sx={{width:{lg:'180px', md:'160px', sm:'140px', xs:'120px'}, height:{lg:'85px', md:'80px', sm:'76px', xs:'70px'} }}>
@@ -205,9 +205,9 @@ const Seo = () => {
 
                         </Grid>
                     </Grid>
-                </Box>
+                </Box> */}
 
-                <Box sx={{ display:{ lg:"flex", md:'flex', sm:'flex', xs:'none'}, justifyContent: "center", alignItems: "center", bgcolor: "black", p: "15px", m: '30px' }}>
+                {/* <Box sx={{ display:{ lg:"flex", md:'flex', sm:'flex', xs:'none'}, justifyContent: "center", alignItems: "center", bgcolor: "black", p: "15px", m: '30px' }}>
                     <Grid container xs={12}  >
                         <Grid item xs={2} sm={2} md={2} lg={2} data-aos='fade-up' sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                             <Box sx={{width:{lg:'170px', md:'130px', sm:'90px', xs:'70px'}, height:{lg:'60px', md:'50px', sm:'50px', xs:'40px'}}}>
@@ -248,7 +248,7 @@ const Seo = () => {
                         </Box>
                         </Grid>
                     </Grid>
-                </Box>
+                </Box> */}
                 <Grid container sx={{ p: { xs: "8px", sm: "8px", md: "8px", lg: "15px", m: '20px 0px' } , justifyContent:'space-evenly', alignItems:'center'}}>
                     
                     <Grid item xs={12} md={5} lg={5} data-aos='fade-up'>
@@ -287,9 +287,9 @@ const Seo = () => {
                                     The need for a high-quality SEO strategy has not only been higher but essential. If you are not applying that, you can be that competitors are!
 
                                 </Typography>
-                                <Typography sx={{ fontSize: "20px", fontWeight: "400", ml:'10px', color:'white' }}>
+                                {/* <Typography sx={{ fontSize: "20px", fontWeight: "400", ml:'10px', color:'white' }}>
                                     Our services provide a unique range of benefits -
-                                </Typography>
+                                </Typography> */}
                             </Box>
                         </Grid>
                         <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -326,7 +326,7 @@ const Seo = () => {
                                     We work hard and are dedicated to producing good results. Although developing an app is difficult, it is possible to determine the client's objectives and establish.
 
                                 </Typography>
-                                <Typography align='center' sx={{ color: "white", fontSize: "25px", fontWeight: "900", }}>
+                                <Typography align='center' sx={{ color: "white", fontSize:{lg:'33px', md:'30px', sm:'30px', xs:'22px'}, fontWeight: "900", }}>
                                     Our priority areas
                                 </Typography>
                             </Box>

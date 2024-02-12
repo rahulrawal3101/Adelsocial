@@ -44,7 +44,6 @@ const Portfolio = () => {
                         <Typography sx={{ fontSize: '16px', color: '#eeeeee', fontWeight: 'bold', color: 'white', textShadow: '1px 4px 5px rgba(93,84,84,0.6)' ,cursor:'pointer'}} onClick={()=>{navigate('/about')}}>About</Typography>
                         <Typography sx={{ fontSize: '16px', color: '#eeeeee', fontWeight: 'bold', color: 'white', textShadow: '1px 4px 5px rgba(93,84,84,0.6)',cursor:'pointer' }} onClick={()=>{navigate('/contact')}}>Contact</Typography>
 
-
                     </Grid>
                     <Grid item xs={3} sx={{ display: { lg: 'flex', md: 'flex', sm: 'none', xs: 'none' }, justifyContent: 'right', alignItems: 'center', p: '0px 15px' }}>
                         <HelpOutlineOutlinedIcon sx={{ color: '#eeeeee', fontSize: '25px', mr: '7px' }} />

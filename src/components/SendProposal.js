@@ -30,9 +30,9 @@ const SendProposal = () => {
                     <Typography textAlign={'center'} variant='body1' sx={{ mb: '10px', color: SECONDARY_COLOR, fontWeight: 500, fontFamily: 'sans' }} data-aos="fade-up">
                         Let's Create Your App and Website Together!
                     </Typography>
-                    <Box sx={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+                    <Box sx={{display:'flex',justifyContent:'center',alignItems:'center'}} data-aos="fade-up">
 
-                    <Button variant='contained' onClick={()=>{navigate('/portfolio')}} sx={{fontSize:'16px',fontFamily:'serif',p:'8px 25px',borderRadius:'3px 8px 3px 8px'}}>Portfolio</Button>
+                    <Button variant='contained' onClick={()=>{navigate('/portfolio')}} sx={{fontSize:'16px',fontFamily:'serif',p:'8px 25px',borderRadius:'3px 15px 3px 15px'}}>Portfolio</Button>
                     </Box>
                     
 
