@@ -21,11 +21,11 @@ import NewCrousel from '../components/NewCrousel'
 const Homepage = () => {
     const { dispatch } = useContext(AdelContext)
     const { state } = useBottomBar()
-    useEffect(() => {
-        setTimeout(() => {
-            dispatch({ type: 'MODAL_ACTION', payload: true })
-        }, 4000)
-    }, [])
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         dispatch({ type: 'MODAL_ACTION', payload: true })
+    //     }, 4000)
+    // }, [])
 
     useEffect(()=>{
    AOS.init({duration:2000})
