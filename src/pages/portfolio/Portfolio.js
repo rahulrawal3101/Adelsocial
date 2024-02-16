@@ -88,8 +88,8 @@ const Portfolio = () => {
 
                     <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', position: 'absolute', bottom: { lg: '120px', md: '50px', sm: '1px', xs: '0px' }, zIndex: 1 }} data-aos="fade-up">
                         <Grid item xs={12} sx={{ display: { lg: 'flex', md: 'flex', sm: 'flex', xs: 'flex' }, justifyContent: 'center', alignItems: 'center', pb: '27px' }}>
-                            <Button variant='contained' sx={{ bgcolor: '#e0e0e0', color: '#424242', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '10px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '120px' }, fontWeight: 'bold', mr: '15px', p: '10px', '&:hover': { bgcolor: '#e0e0e0', color: '#424242', } }} onClick={() => { navigate('/contact') }}>Custom Order</Button>
-                            <Button variant='contained' sx={{ bgcolor: '#212121', color: 'white', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '10px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '120px' }, fontWeight: 'bold', ml: '15px', p: '10px', '&:hover': { bgcolor: '#212121', color: 'white', } }} onClick={() => { navigate('/about') }}>Learn More</Button>
+                            <Button variant='contained' sx={{ bgcolor: '#e0e0e0', color: '#424242', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '8px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '90px' }, fontWeight: 'bold', mr: '15px', p: '10px', '&:hover': { bgcolor: '#e0e0e0', color: '#424242', } }} onClick={() => { navigate('/contact') }}>Custom Order</Button>
+                            <Button variant='contained' sx={{ bgcolor: '#212121', color: 'white', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '8px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '90px' }, fontWeight: 'bold', ml: '15px', p: '10px', '&:hover': { bgcolor: '#212121', color: 'white', } }} onClick={() => { navigate('/about') }}>Learn More</Button>
 
                         </Grid>
 
@@ -120,8 +120,8 @@ const Portfolio = () => {
 
                     <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', position: 'absolute', bottom: { lg: '120px', md: '50px', sm: '1px', xs: '0px' }, zIndex: 1 }} data-aos="fade-up">
                         <Grid item xs={12} sx={{ display: { lg: 'flex', md: 'flex', sm: 'flex', xs: 'flex' }, justifyContent: 'center', alignItems: 'center', pb: '27px' }}>
-                            <Button variant='contained' sx={{ bgcolor: '#e0e0e0', color: '#424242', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '10px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '120px' }, fontWeight: 'bold', mr: '15px', p: '10px', '&:hover': { bgcolor: '#e0e0e0', color: '#424242', } }} onClick={() => { navigate('/contact') }}>Custom Order</Button>
-                            <Button variant='contained' sx={{ bgcolor: '#212121', color: 'white', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '10px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '120px' }, fontWeight: 'bold', ml: '15px', p: '10px', '&:hover': { bgcolor: '#212121', color: 'white', } }} onClick={() => { navigate('/about') }}>Learn More</Button>
+                            <Button variant='contained' sx={{ bgcolor: '#e0e0e0', color: '#424242',  fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '8px' }, width: {lg: '265px', md: '200px', sm: '110px', xs: '90px' }, fontWeight: 'bold', mr: '15px', p: '10px', '&:hover': { bgcolor: '#e0e0e0', color: '#424242', } }} onClick={() => { navigate('/contact') }}>Custom Order</Button>
+                            <Button variant='contained' sx={{ bgcolor: '#212121', color: 'white', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '8px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '90px' }, fontWeight: 'bold', ml: '15px', p: '10px', '&:hover': { bgcolor: '#212121', color: 'white', } }} onClick={() => { navigate('/about') }}>Learn More</Button>
 
                         </Grid>
 
@@ -150,8 +150,8 @@ const Portfolio = () => {
 
                     <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', position: 'absolute', bottom: { lg: '120px', md: '50px', sm: '1px', xs: '0px' }, zIndex: 1 }} data-aos="fade-up">
                         <Grid item xs={12} sx={{ display: { lg: 'flex', md: 'flex', sm: 'flex', xs: 'flex' }, justifyContent: 'center', alignItems: 'center', pb: '27px' }}>
-                            <Button variant='contained' sx={{ bgcolor: '#e0e0e0', color: '#424242', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '10px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '120px' }, fontWeight: 'bold', mr: '15px', p: '10px', '&:hover': { bgcolor: '#e0e0e0', color: '#424242', } }} onClick={() => { navigate('/contact') }}>Custom Order</Button>
-                            <Button variant='contained' sx={{ bgcolor: '#212121', color: 'white', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '10px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '120px' }, fontWeight: 'bold', ml: '15px', p: '10px', '&:hover': { bgcolor: '#212121', color: 'white', } }} onClick={() => { navigate('/about') }}>Learn More</Button>
+                            <Button variant='contained' sx={{ bgcolor: '#e0e0e0', color: '#424242', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '8px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '90px' }, fontWeight: 'bold', mr: '15px', p: '10px', '&:hover': { bgcolor: '#e0e0e0', color: '#424242', } }} onClick={() => { navigate('/contact') }}>Custom Order</Button>
+                            <Button variant='contained' sx={{ bgcolor: '#212121', color: 'white', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '8px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '90px' }, fontWeight: 'bold', ml: '15px', p: '10px', '&:hover': { bgcolor: '#212121', color: 'white', } }} onClick={() => { navigate('/about') }}>Learn More</Button>
 
                         </Grid>
 
@@ -181,8 +181,8 @@ const Portfolio = () => {
 
                     <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', position: 'absolute', bottom: { lg: '120px', md: '50px', sm: '1px', xs: '0px' }, zIndex: 1 }} data-aos="fade-up">
                         <Grid item xs={12} sx={{ display: { lg: 'flex', md: 'flex', sm: 'flex', xs: 'flex' }, justifyContent: 'center', alignItems: 'center', pb: '27px' }}>
-                            <Button variant='contained' sx={{ bgcolor: '#e0e0e0', color: '#424242', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '10px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '120px' }, fontWeight: 'bold', mr: '15px', p: '10px', '&:hover': { bgcolor: '#e0e0e0', color: '#424242', } }} onClick={() => { navigate('/contact') }}>Custom Order</Button>
-                            <Button variant='contained' sx={{ bgcolor: '#212121', color: 'white', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '10px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '120px' }, fontWeight: 'bold', ml: '15px', p: '10px', '&:hover': { bgcolor: '#212121', color: 'white', } }} onClick={() => { navigate('/about') }}>Learn More</Button>
+                            <Button variant='contained' sx={{ bgcolor: '#e0e0e0', color: '#424242', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '8px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '90px' }, fontWeight: 'bold', mr: '15px', p: '10px', '&:hover': { bgcolor: '#e0e0e0', color: '#424242', } }} onClick={() => { navigate('/contact') }}>Custom Order</Button>
+                            <Button variant='contained' sx={{ bgcolor: '#212121', color: 'white', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '8px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '90px'}, fontWeight: 'bold', ml: '15px', p: '10px', '&:hover': { bgcolor: '#212121', color: 'white', } }} onClick={() => { navigate('/about') }}>Learn More</Button>
 
                         </Grid>
 
