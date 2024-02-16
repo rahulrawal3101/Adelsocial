@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c18a630a.css",
-    "main.js": "/static/js/main.cdb04109.js",
+    "main.js": "/static/js/main.e1a526f6.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.73fc7e16.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.42075abe.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.461db7b6.chunk.js",
@@ -15,6 +15,9 @@
     "reactPlayerKaltura.js": "/static/js/reactPlayerKaltura.0b87bc1d.chunk.js",
     "reactPlayerFilePlayer.js": "/static/js/reactPlayerFilePlayer.ed868b69.chunk.js",
     "reactPlayerPreview.js": "/static/js/reactPlayerPreview.625a68c3.chunk.js",
+    "static/media/video1.mp4": "/static/media/video1.deacb598f8c557758a35.mp4",
+    "static/media/mytutor.mp4": "/static/media/mytutor.c5a15cea9d1c80eb031d.mp4",
+    "static/media/video2.mp4": "/static/media/video2.7f2db5f24e71d1ff374f.mp4",
     "static/media/adel.mp4": "/static/media/adel.fba553ad0831141533da.mp4",
     "static/media/hiring-modal-two.png": "/static/media/hiring-modal-two.18936b61fb51522f8c98.png",
     "static/media/godvideo.mp4": "/static/media/godvideo.6eeb0fff8bf5c59239ec.mp4",
@@ -143,7 +146,7 @@
     "static/media/seo.svg": "/static/media/seo.961d4a085d06886e37ef3c91cdaf8edc.svg",
     "index.html": "/index.html",
     "main.c18a630a.css.map": "/static/css/main.c18a630a.css.map",
-    "main.cdb04109.js.map": "/static/js/main.cdb04109.js.map",
+    "main.e1a526f6.js.map": "/static/js/main.e1a526f6.js.map",
     "reactPlayerYouTube.73fc7e16.chunk.js.map": "/static/js/reactPlayerYouTube.73fc7e16.chunk.js.map",
     "reactPlayerSoundCloud.42075abe.chunk.js.map": "/static/js/reactPlayerSoundCloud.42075abe.chunk.js.map",
     "reactPlayerVimeo.461db7b6.chunk.js.map": "/static/js/reactPlayerVimeo.461db7b6.chunk.js.map",
@@ -160,6 +163,6 @@
   },
   "entrypoints": [
     "static/css/main.c18a630a.css",
-    "static/js/main.cdb04109.js"
+    "static/js/main.e1a526f6.js"
   ]
 }
