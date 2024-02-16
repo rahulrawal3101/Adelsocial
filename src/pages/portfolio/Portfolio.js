@@ -7,8 +7,6 @@ import React, { useEffect, useState, } from 'react';
 import ReactPlayer from 'react-player';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import godvideo from '../../assets/godvideo.mp4';
-import ecommerce from '../../assets/ecommerce.mp4';
 import video1 from '../../assets/video1.mp4';
 import video2 from '../../assets/video2.mp4'
 import adel from '../../assets/adel.mp4';
@@ -105,7 +103,7 @@ const Portfolio = () => {
 
             <Grid container sx={{ position: 'relative', mt: '-10px' }}>
                 <Grid item xs={12} >
-                    <ReactPlayer url={`${mytutor}`} width={'100%'} height={'100%'} controls={true} playing={true} loop={true} muted={true} volume={0}  style={{ border: '1px solid transparent' }} />
+                    <ReactPlayer url={`${mytutor}`} width={'100%'} height={'100%'} controls={false} playing={true} loop={true} muted={true} volume={0}  style={{ border: '1px solid transparent' }} />
                     {/* <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0, 0, 0, 0.4)', }} /> */}
 
                     <Grid container sx={{ position: 'absolute', top: { lg: '170px', md: '110px', sm: '70px', xs: '30px' }, }}>
