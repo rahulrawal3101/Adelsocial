@@ -25,9 +25,7 @@ const Portfolio = () => {
     const openDrawerHandler = () => {
         setOpen(true)
     };
-    const testingHandler=()=>{
-        setDOpen(true)
-    }
+   
 
     const navigate = useNavigate()
     useEffect(() => {
@@ -66,7 +64,7 @@ const Portfolio = () => {
 
                     </Grid>
                     <Grid item xs={3} sx={{ display: { lg: 'none', md: 'none', sm: 'flex', xs: 'flex' }, justifyContent: 'right', alignItems: 'center', p: '0px 15px' }}>
-                    <Button variant='contained' sx={{ bgcolor: '#e0e0e0', color: 'white', textTransform: 'capitalize', background: 'rgba(0,0,0,0.5)', fontSize: { lg: '14px', md: '13px', sm: '12px', xs: '11px' } }} onClick={testingHandler}>Testing</Button>
+                
                         <Button sx={{ bgcolor: '#e0e0e0', color: 'white', textTransform: 'capitalize', background: 'rgba(0,0,0,0.5)', fontSize: { lg: '14px', md: '13px', sm: '12px', xs: '11px' } }} onClick={openDrawerHandler}><MenuIcon sx={{ color: 'white' }} /></Button>
                     </Grid>
 
@@ -201,7 +199,7 @@ const Portfolio = () => {
 
 
             <SecondSideDrawer open={open} setOpen={setOpen} />
-            <FirstSideDrawer dOpen={dOpen} setDOpen={setDOpen}/>
+           
         </>
     )
 }
