@@ -11,7 +11,10 @@ export const reducer = (state, action) => {
         case 'MODAL_ACTION':
             return { ...state, modal_open: action.payload }
         case "DRAWER_CLOSED":
-             return {...state,drawer_opened:false}
+            return { ...state, drawer_opened: false }
+        case "DRAWER_CLICKEDED":
+            return { ...state, dopen: false }
+
         default:
             return { ...state }
     }

@@ -7,6 +7,7 @@ const initialState = {
     trigger: false,
     propasal_input: "",
     drawer_opened: false,
+    dopen:false,
     modal_open: false,
 }
 
@@ -21,7 +22,7 @@ function handleOpenWhatsAppChat() {
 
 const AdelContextWrapper = (props) => {
     const [state, dispatch] = useReducer(reducer, initialState);
-    return <AdelContext.Provider value={{ state, dispatch,handleOpenWhatsAppChat }}>
+    return <AdelContext.Provider value={{ state, dispatch,handleOpenWhatsAppChat, }}>
         {props.children}
     </AdelContext.Provider>
 }

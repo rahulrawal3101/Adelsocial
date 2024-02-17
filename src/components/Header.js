@@ -4,7 +4,7 @@ import "@fontsource/lora"; // Defaults to weight 400
 import "@fontsource/lora/400-italic.css";
 import "@fontsource/lora/400.css"; // Specify weight
 import MenuIcon from '@mui/icons-material/Menu';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../assets/adellogo.png';
 import { MAIN_COLOR } from '../constant';
@@ -13,12 +13,14 @@ import ScrollToColor from "../global/ScrollToColor";
 import '../pages/Homepage.css';
 import { AdelContext } from '../store/Context';
 import MegaMenu from "../utils/MegaMenu";
+import FirstSideDrawer from './FirstSideDrawer';
 
 
 
 
 export default function Header() {
-    const { state, dispatch } = useContext(AdelContext)
+    const { state, dispatch } = useContext(AdelContext);
+    const [dOpen,setDOpen] = useState(false)
     const navigate = useNavigate()
 
     
@@ -28,9 +30,16 @@ export default function Header() {
             top:0,
             behavior:"smooth"
         })
+    };
+
+    const openDrawerHandler=()=>{
+        setDOpen(true)
     }
 
     return (
+        <>
+
+      
         <Grid item>
             <CssBaseline />
             <ScrollToColor>
@@ -64,7 +73,8 @@ export default function Header() {
                                 <SearchOutlinedIcon />
                             </IconButton> */}
                             <Button variant='contained' sx={{  color:"white",bgcolor:MAIN_COLOR, textTransform: 'unset', fontWeight: 900, display: { xs: 'none', sm: 'none',md:"none",lg:"block" } }}>Free Consultancy</Button>
-                            <MenuIcon onClick={() => dispatch({ type: "DRAWER_CLICKED", payload: true })} sx={{ ml: '20px', cursor: 'pointer',display:{lg:"none",md:"none",sm:"flex",xs:"flex"},color:MAIN_COLOR }} />
+                            {/* <MenuIcon onClick={() => dispatch({ type: "DRAWER_CLICKED", payload: true })} sx={{ ml: '20px', cursor: 'pointer',display:{lg:"none",md:"none",sm:"flex",xs:"flex"},color:MAIN_COLOR }} /> */}
+                            <MenuIcon onClick={openDrawerHandler} sx={{ ml: '20px', cursor: 'pointer',display:{lg:"none",md:"none",sm:"flex",xs:"flex"},color:MAIN_COLOR }} />
                         </Box>
                         </Box>
                       
@@ -72,5 +82,10 @@ export default function Header() {
                 </AppBar>
             </ScrollToColor>
         </Grid>
+        <FirstSideDrawer  dOpen={dOpen} setDOpen={setDOpen}/>
+
+        </>
+
+        
     );
 }

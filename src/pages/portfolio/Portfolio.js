@@ -15,13 +15,18 @@ import mytutor from '../../assets/mytutor.mp4'
 import { useNavigate } from 'react-router-dom';
 import SecondSideDrawer from '../../components/SecondSideDrawer';
 import MenuIcon from '@mui/icons-material/Menu';
+import FirstSideDrawer from '../../components/FirstSideDrawer';
 
 
 const Portfolio = () => {
     const [open, setOpen] = useState(false);
+    const [dOpen,setDOpen] = useState(false)
 
     const openDrawerHandler = () => {
         setOpen(true)
+    };
+    const testingHandler=()=>{
+        setDOpen(true)
     }
 
     const navigate = useNavigate()
@@ -61,6 +66,7 @@ const Portfolio = () => {
 
                     </Grid>
                     <Grid item xs={3} sx={{ display: { lg: 'none', md: 'none', sm: 'flex', xs: 'flex' }, justifyContent: 'right', alignItems: 'center', p: '0px 15px' }}>
+                    <Button variant='contained' sx={{ bgcolor: '#e0e0e0', color: 'white', textTransform: 'capitalize', background: 'rgba(0,0,0,0.5)', fontSize: { lg: '14px', md: '13px', sm: '12px', xs: '11px' } }} onClick={testingHandler}>Testing</Button>
                         <Button sx={{ bgcolor: '#e0e0e0', color: 'white', textTransform: 'capitalize', background: 'rgba(0,0,0,0.5)', fontSize: { lg: '14px', md: '13px', sm: '12px', xs: '11px' } }} onClick={openDrawerHandler}><MenuIcon sx={{ color: 'white' }} /></Button>
                     </Grid>
 
@@ -99,11 +105,11 @@ const Portfolio = () => {
                 </Grid>
             </Grid>
 
-          
+
 
             <Grid container sx={{ position: 'relative', mt: '-10px' }}>
                 <Grid item xs={12} >
-                    <ReactPlayer url={`${mytutor}`} width={'100%'} height={'100%'} controls={false} playing={true} loop={true} muted={true} volume={0}  style={{ border: '1px solid transparent' }} />
+                    <ReactPlayer url={`${mytutor}`} width={'100%'} height={'100%'} controls={false} playing={true} loop={true} muted={true} volume={0} style={{ border: '1px solid transparent' }} />
                     {/* <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0, 0, 0, 0.4)', }} /> */}
 
                     <Grid container sx={{ position: 'absolute', top: { lg: '170px', md: '110px', sm: '70px', xs: '30px' }, }}>
@@ -118,7 +124,7 @@ const Portfolio = () => {
 
                     <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', position: 'absolute', bottom: { lg: '120px', md: '50px', sm: '1px', xs: '0px' }, zIndex: 1 }} data-aos="fade-up">
                         <Grid item xs={12} sx={{ display: { lg: 'flex', md: 'flex', sm: 'flex', xs: 'flex' }, justifyContent: 'center', alignItems: 'center', pb: '27px' }}>
-                            <Button variant='contained' sx={{ bgcolor: '#e0e0e0', color: '#424242',  fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '8px' }, width: {lg: '265px', md: '200px', sm: '110px', xs: '90px' }, fontWeight: 'bold', mr: '15px', p: '10px', '&:hover': { bgcolor: '#e0e0e0', color: '#424242', } }} onClick={() => { navigate('/contact') }}>Custom Order</Button>
+                            <Button variant='contained' sx={{ bgcolor: '#e0e0e0', color: '#424242', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '8px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '90px' }, fontWeight: 'bold', mr: '15px', p: '10px', '&:hover': { bgcolor: '#e0e0e0', color: '#424242', } }} onClick={() => { navigate('/contact') }}>Custom Order</Button>
                             <Button variant='contained' sx={{ bgcolor: '#212121', color: 'white', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '8px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '90px' }, fontWeight: 'bold', ml: '15px', p: '10px', '&:hover': { bgcolor: '#212121', color: 'white', } }} onClick={() => { navigate('/about') }}>Learn More</Button>
 
                         </Grid>
@@ -180,7 +186,7 @@ const Portfolio = () => {
                     <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', position: 'absolute', bottom: { lg: '120px', md: '50px', sm: '1px', xs: '0px' }, zIndex: 1 }} data-aos="fade-up">
                         <Grid item xs={12} sx={{ display: { lg: 'flex', md: 'flex', sm: 'flex', xs: 'flex' }, justifyContent: 'center', alignItems: 'center', pb: '27px' }}>
                             <Button variant='contained' sx={{ bgcolor: '#e0e0e0', color: '#424242', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '8px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '90px' }, fontWeight: 'bold', mr: '15px', p: '10px', '&:hover': { bgcolor: '#e0e0e0', color: '#424242', } }} onClick={() => { navigate('/contact') }}>Custom Order</Button>
-                            <Button variant='contained' sx={{ bgcolor: '#212121', color: 'white', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '8px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '90px'}, fontWeight: 'bold', ml: '15px', p: '10px', '&:hover': { bgcolor: '#212121', color: 'white', } }} onClick={() => { navigate('/about') }}>Learn More</Button>
+                            <Button variant='contained' sx={{ bgcolor: '#212121', color: 'white', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '8px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '90px' }, fontWeight: 'bold', ml: '15px', p: '10px', '&:hover': { bgcolor: '#212121', color: 'white', } }} onClick={() => { navigate('/about') }}>Learn More</Button>
 
                         </Grid>
 
@@ -189,11 +195,13 @@ const Portfolio = () => {
                         </Grid>
 
                     </Grid>
+                  
                 </Grid>
             </Grid>
 
 
             <SecondSideDrawer open={open} setOpen={setOpen} />
+            <FirstSideDrawer dOpen={dOpen} setDOpen={setDOpen}/>
         </>
     )
 }
