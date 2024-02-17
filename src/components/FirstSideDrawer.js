@@ -59,26 +59,26 @@ const FirstSideDrawer = ({ dOpen, setDOpen }) => {
                 }}
             >
                 <Grid container>
-                <Grid container sx={{position:'sticky',top:'0px'}}>
-                <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'right', alignItems: 'center', p: '4px',bgcolor:'black' }} >
-                        <CancelIcon sx={{ color: 'white', fontSize: '35px', cursor: 'pointer' }} onClick={closeHandler} />
-                    </Grid>
-                    <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' ,bgcolor:'black',pb:'15px'}}>
-                        <Box sx={{ bgcolor: 'white', width: '240px', height: '60px', borderRadius: '10px' }}>
-                            <img src={adellogo} style={{ height: '100%', width: '100%' }} />
-                        </Box>
+                    <Grid container sx={{ position: 'sticky', top: '0px' }}>
+                        <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'right', alignItems: 'center', p: '4px', bgcolor: 'black' }} >
+                            <CancelIcon sx={{ color: 'white', fontSize: '35px', cursor: 'pointer' }} onClick={closeHandler} />
+                        </Grid>
+                        <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'black', pb: '15px' }}>
+                            <Box sx={{ bgcolor: 'white', width: '240px', height: '60px', borderRadius: '10px' }}>
+                                <img src={adellogo} style={{ height: '100%', width: '100%' }} />
+                            </Box>
+
+                        </Grid>
 
                     </Grid>
 
-                </Grid>
-                  
 
-                    <Grid item xs={12} sx={{pb:'60px'}}>
+                    <Grid item xs={12} sx={{ pb: '60px' }}>
                         <Box
-                            sx={{ height: '100%', bgcolor: 'white', color: 'white',  }} role="presentation" >
+                            sx={{ height: '100%', bgcolor: 'white', color: 'white', }} role="presentation" >
                             {data.map((item) => {
                                 return <div key={item.title}>
-                                    <Box sx={{ p: '5px', bgcolor: 'black',}}>
+                                    <Box sx={{ p: '5px', bgcolor: 'black', }}>
                                         <Typography textAlign={'center'} variant='h1' sx={{ fontWeight: 900, letterSpacing: '2px', fontSize: '17px' }}>
                                             {item.title}
                                         </Typography>
@@ -98,18 +98,18 @@ const FirstSideDrawer = ({ dOpen, setDOpen }) => {
                         </Box>
                     </Grid>
 
-                    <Grid item xs={12} sx={{  pb:'60px' }}>
+                    <Grid item xs={12} sx={{ pb: '60px' }}>
 
-<Box sx={{ display: "flex", justifyContent: "space-around", alignItems: 'center', mb: { lg: '0px', md: '0px', sm: '10px', xs: '20px' } }}>
-    {
-        socialIcons.map((item, index) => {
-            return <Typography key={index} sx={{ color: 'white', }} >
-                <a href={item.link} style={{ color: 'white' }}> {item.icon}</a>
-            </Typography>
-        })
-    }
-</Box>
-</Grid>
+                        <Box sx={{ display: "flex", justifyContent: "space-around", alignItems: 'center', mb: { lg: '0px', md: '0px', sm: '10px', xs: '20px' } }}>
+                            {
+                                socialIcons.map((item, index) => {
+                                    return <Typography key={index} sx={{ color: 'white', }} >
+                                        <a href={item.link} style={{ color: 'white' }}> {item.icon}</a>
+                                    </Typography>
+                                })
+                            }
+                        </Box>
+                    </Grid>
 
                 </Grid>
 
