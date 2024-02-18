@@ -8,7 +8,8 @@ import ReactPlayer from 'react-player';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import video1 from '../../assets/video1.mp4';
-import video2 from '../../assets/video2.mp4'
+import video2 from '../../assets/video2.mp4';
+import video3 from '../../assets/video3.mp4';
 import adel from '../../assets/adel.mp4';
 import hero from '../../assets/hero.mp4';
 import mytutor from '../../assets/mytutor.mp4'
@@ -169,6 +170,37 @@ const Portfolio = () => {
             <Grid container sx={{ position: 'relative', mt: '-10px' }}>
                 <Grid item xs={12} >
                     <ReactPlayer url={`${video2}`} width={'100%'} height={'100%'} controls={false} playing={true} loop={true} muted={true} style={{ border: '1px solid transparent' }} />
+                    {/* <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0, 0, 0, 0.4)', }} /> */}
+
+                    <Grid container sx={{ position: 'absolute', top: { lg: '170px', md: '110px', sm: '70px', xs: '30px' }, }}>
+                        <Grid item xs={12} data-aos="fade-up">
+                            {/* <Typography sx={{ fontWeight: 'bold', fontSize: { lg: '45px', md: '40px', sm: '35px', xs: '30px' }, color: 'white', textAlign: 'center' }}>Golden Earth</Typography>
+                            <Typography sx={{ color: 'white', fontSize: { lg: '25px', md: '20px', sm: '17px', xs: '14px' }, textAlign: 'center' }}>Lease starting at $329/mo*</Typography> */}
+
+                        </Grid>
+                    </Grid>
+
+
+
+                    <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', position: 'absolute', bottom: { lg: '120px', md: '50px', sm: '1px', xs: '0px' }, zIndex: 1 }} data-aos="fade-up">
+                        <Grid item xs={12} sx={{ display: { lg: 'flex', md: 'flex', sm: 'flex', xs: 'flex' }, justifyContent: 'center', alignItems: 'center', pb: '27px' }}>
+                            <Button variant='contained' sx={{ bgcolor: '#e0e0e0', color: '#424242', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '8px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '90px' }, fontWeight: 'bold', mr: '15px', p: '10px', '&:hover': { bgcolor: '#e0e0e0', color: '#424242', } }} onClick={() => { navigate('/contact') }}>Custom Order</Button>
+                            <Button variant='contained' sx={{ bgcolor: '#212121', color: 'white', fontSize: { lg: '12px', md: '11px', sm: '10px', xs: '8px' }, width: { lg: '265px', md: '200px', sm: '110px', xs: '90px' }, fontWeight: 'bold', ml: '15px', p: '10px', '&:hover': { bgcolor: '#212121', color: 'white', } }} onClick={() => { navigate('/about') }}>Learn More</Button>
+
+                        </Grid>
+
+                        <Grid item xs={12} sx={{ pb: '17px', display: { lg: 'block', md: 'block', sm: 'none', xs: 'none' } }} >
+                            {/* <Typography sx={{ color: 'white', fontSize: '13px', textAlign: 'center' }}>*Excludes taxes and fees with price subject to change. Available in select states. See Details</Typography> */}
+                        </Grid>
+
+                    </Grid>
+                  
+                </Grid>
+            </Grid>
+
+            <Grid container sx={{ position: 'relative', mt: '-10px' }}>
+                <Grid item xs={12} >
+                    <ReactPlayer url={`${video3}`} width={'100%'} height={'100%'} controls={false} playing={true} loop={true} muted={true} style={{ border: '1px solid transparent' }} />
                     {/* <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0, 0, 0, 0.4)', }} /> */}
 
                     <Grid container sx={{ position: 'absolute', top: { lg: '170px', md: '110px', sm: '70px', xs: '30px' }, }}>
