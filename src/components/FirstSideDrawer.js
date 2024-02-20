@@ -12,7 +12,7 @@ import { MAIN_COLOR } from '../constant';
 import Typewriter from 'typewriter-effect';
 import { AdelContext } from '../store/Context';
 import './SideDrawer.css'
-const socialIcons = [{ icon: <InstagramIcon sx={{ color: 'black', '&:hover': { color: MAIN_COLOR } }} />, name: "insta", link: 'https://www.instagram.com/adelsociall/' }, { icon: <FacebookIcon sx={{ color: 'black', '&:hover': { color: MAIN_COLOR } }} />, name: "face", link: 'https://www.facebook.com/AdelSocial/' }, { icon: <TwitterIcon sx={{ color: 'black', '&:hover': { color: MAIN_COLOR } }} />, name: "twit", link: 'https://twitter.com/i/flow/login?redirect_after_login=%2Fadelsocial' }, { icon: <LinkedInIcon sx={{ color: 'black', '&:hover': { color: MAIN_COLOR } }} />, name: "link", link: 'https://www.linkedin.com/company/adelsocial/' }];
+const socialIcons = [{ icon: <InstagramIcon sx={{ color: MAIN_COLOR, '&:hover': { color: MAIN_COLOR } }} />, name: "insta", link: 'https://www.instagram.com/adelsociall/' }, { icon: <FacebookIcon sx={{ color: MAIN_COLOR, '&:hover': { color: MAIN_COLOR } }} />, name: "face", link: 'https://www.facebook.com/AdelSocial/' }, { icon: <TwitterIcon sx={{ color: MAIN_COLOR, '&:hover': { color: MAIN_COLOR } }} />, name: "twit", link: 'https://twitter.com/i/flow/login?redirect_after_login=%2Fadelsocial' }, { icon: <LinkedInIcon sx={{ color: MAIN_COLOR, '&:hover': { color: MAIN_COLOR } }} />, name: "link", link: 'https://www.linkedin.com/company/adelsocial/' }];
 
 const data = [
     { title: 'Services', list: [{ service: 'Whatsapp API', path: 'ADEL' }, { service: 'Bulk Whatsapp', path: 'ADEL' }, { service: 'Bulk Mailer', path: 'ADEL' }, { service: 'Bulk SMS', path: 'ADEL' }] },
@@ -58,12 +58,12 @@ const FirstSideDrawer = ({ dOpen, setDOpen }) => {
                     sx: { width: { lg: '0%', md: '28%', sm: '45%', xs: '80%' }, zIndex: 999999999, margin: 'auto', bgcolor: 'white' }
                 }}
             >
-                <Grid container>
-                    <Grid container sx={{ position: 'sticky', top: '0px' }}>
-                        <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'right', alignItems: 'center', p: '4px', bgcolor: 'black' }} >
+                <Grid container >
+                    <Grid container sx={{ position: 'sticky', top: '0px', }}>
+                        <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'right', alignItems: 'center', p: '4px', bgcolor: MAIN_COLOR }} >
                             <CancelIcon sx={{ color: 'white', fontSize: '35px', cursor: 'pointer' }} onClick={closeHandler} />
                         </Grid>
-                        <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'black', pb: '15px' }}>
+                        <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: MAIN_COLOR, pb: '15px' }}>
                             <Box sx={{ bgcolor: 'white', width: '240px', height: '60px', borderRadius: '10px' }}>
                                 <img src={adellogo} style={{ height: '100%', width: '100%' }} />
                             </Box>
@@ -78,7 +78,7 @@ const FirstSideDrawer = ({ dOpen, setDOpen }) => {
                             sx={{ height: '100%', bgcolor: 'white', color: 'white', }} role="presentation" >
                             {data.map((item) => {
                                 return <div key={item.title}>
-                                    <Box sx={{ p: '5px', bgcolor: 'black', }}>
+                                    <Box sx={{ p: '5px', bgcolor:MAIN_COLOR, }}>
                                         <Typography textAlign={'center'} variant='h1' sx={{ fontWeight: 900, letterSpacing: '2px', fontSize: '17px' }}>
                                             {item.title}
                                         </Typography>
@@ -86,7 +86,7 @@ const FirstSideDrawer = ({ dOpen, setDOpen }) => {
                                     {item.list.map((list) => {
                                         return <Box onClick={() => { handleNavigate(list.path) }} key={list.service} className="controlHoverServicesParent" sx={{ mb: '3px', mt: '3px', cursor: 'pointer', }}>
                                             <Box className="controlHoverServices">
-                                                <Typography className='controlHoverServicesText' variant='h1' sx={{ ml: '10px', fontWeight: 500, fontSize: '15px', whiteSpace: 'nowrap' }}>
+                                                <Typography className='controlHoverServicesText' variant='h1' sx={{ ml: '10px', fontWeight: 500, fontSize: '16px', whiteSpace: 'nowrap' }}>
                                                     {list.service}
                                                 </Typography>
                                             </Box>

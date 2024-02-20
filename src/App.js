@@ -47,6 +47,7 @@ import NewCrousel from './components/NewCrousel';
 import Portfolio from './pages/portfolio/Portfolio';
 
 
+
 function App() {
   const { state } = useBottomBar()
  
@@ -125,6 +126,7 @@ function App() {
           <Route exact path="bulkmailer" element={<BulkMailer />} />
           <Route exact path="cro" element={<NewCrousel />} />
           <Route exact path='portfolio' element={<Portfolio/>}/>
+         
 
         </Routes>
       </Router>
