@@ -28,10 +28,10 @@ const ReactFrontend = () => {
             <Header />
             {state.currentScreenSize < 918 && <BottomNavBar />}
             <Container disableGutters maxWidth="xl">
-                
-                 {/* new section  */}
-                 <Grid container>
-                    <Grid item xs={12} sx={{ backgroundImage: `url(${react})`,bgcolor: 'rgb(90,90,90)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundBlendMode: "multiply", backgroundPosition: 'center', p:{lg:"50px",md:"50px",sm:"30px 15px",xs:"30px 10px"} }}>
+
+                {/* new section  */}
+                <Grid container>
+                    <Grid item xs={12} sx={{ backgroundImage: `url(${react})`, bgcolor: 'rgb(90,90,90)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundBlendMode: "multiply", backgroundPosition: 'center', p: { lg: "50px", md: "50px", sm: "30px 15px", xs: "30px 10px" } }}>
 
                         <Grid container sx={{ p: "10px" }}>
                             <Grid item xs={2} sm={2} md={1} lg={1} >
@@ -42,27 +42,27 @@ const ReactFrontend = () => {
                                 <Box sx={{ lineHeight: "10", pt: '40px' }}>
                                     <Box>
                                         <Typography variant='h3' sx={{ fontWeight: "800", color: "white", fontSize: { lg: '50px', xs: '30px' } }}>
-                                        Hire ReactJs<Box style={{ color: MAIN_COLOR, fontWeight: 900, fontSize: { lg: '80px', xs: '40px' }, backgroundColor: 'black', padding: '0px 0px', borderRadius: '10px', width: 'fit-content' }}>Developers</Box>
+                                            Hire ReactJs<Box style={{ color: MAIN_COLOR, fontWeight: 900, fontSize: { lg: '80px', xs: '40px' }, backgroundColor: 'black', padding: '0px 0px', borderRadius: '10px', width: 'fit-content' }}>Developers</Box>
                                         </Typography>
                                         <Typography sx={{ color: "white", mt: "20px", fontSize: { lg: "15px", xs: '13px', md: '18px' } }}>
-                                        Our ReactJs developers streamline your business with next-gen web app development services.
-                                Take your business to new heights with our ReactJS app development services.
+                                            Our ReactJs developers streamline your business with next-gen web app development services.
+                                            Take your business to new heights with our ReactJS app development services.
                                         </Typography>
                                         <Box sx={{ mt: "40px", display: "flex", justifyContent: { xs: "center", sm: "center", md: "center", lg: "left" } }}>
-                                        <Button variant='contained' sx={{ borderRadius: "25px", p: '10px 30px' }}>
-                                Talk to Us
-                            </Button>
+                                            <Button variant='contained' sx={{ borderRadius: "25px", p: '10px 30px' }}>
+                                                Talk to Us
+                                            </Button>
                                         </Box>
                                     </Box>
                                 </Box>
                             </Grid>
 
-                            <Grid item xs={12} lg={5} sx={{ mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { xs: "none", sm: "none", md: "none", lg: "block" } }}>
+                            <Grid item xs={12} lg={5} sx={{ mt: { xs: "70px", sm: "70px", md: "70px", lg: "55px" }, display: { xs: "none", sm: "none", md: "none", lg: "block" } }}>
                                 <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                                    <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "65%", lg: "60%" }, lineHeight: "3.8", p: "0px 14px 14px 14px ",borderRadius: '17px' }}>
+                                    <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "65%", lg: "60%" }, lineHeight: "3.8", p: "0px 14px 14px 14px ", borderRadius: '17px' }}>
                                         <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                                             <Box sx={{ p: "15px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
-                                                <Typography align='center' sx={{ color: "white",whiteSpace:"nowrap", fontSize:{xs:"16px"}, bgcolor: MAIN_COLOR }}>
+                                                <Typography align='center' sx={{ color: "white", whiteSpace: "nowrap", fontSize: { xs: "16px" }, bgcolor: MAIN_COLOR }}>
                                                     Request a free quote
                                                 </Typography>
                                             </Box>
@@ -87,10 +87,10 @@ const ReactFrontend = () => {
 
                     <Grid item xs={12} lg={5} sx={{ mb: "20px", mt: { xs: "30px", sm: "30px", md: "30px", lg: "35px" }, display: { xs: "block", sm: "block", md: "block", lg: "none" } }}>
                         <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                            <Paper sx={{ height: "fit-content", width: { xs: "80%", sm: "55%", md: "50%", lg: "60%" }, lineHeight: "3.5", p: "0px 14px 14px 14px ",borderRadius: '17px', }}>
+                            <Paper sx={{ height: "fit-content", width: { xs: "80%", sm: "55%", md: "50%", lg: "60%" }, lineHeight: "3.5", p: "0px 14px 14px 14px ", borderRadius: '17px', }}>
                                 <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                                     <Box sx={{ p: "10px", borderRadius: "15px", bgcolor: MAIN_COLOR, width: "60%" }}>
-                                        <Typography align='center' sx={{ color: "white",whiteSpace:"nowrap", fontSize:"15px", bgcolor: MAIN_COLOR }}>
+                                        <Typography align='center' sx={{ color: "white", whiteSpace: "nowrap", fontSize: "15px", bgcolor: MAIN_COLOR }}>
                                             Request a free quote
                                         </Typography>
                                     </Box>
@@ -197,77 +197,102 @@ const ReactFrontend = () => {
                         </Grid>
                     </Box>
                 </Grid>
-                <Grid container spacing={2} sx={{ bgcolor: "#002F96", p: "20px", mt: "20px" }}>
+                <Grid container spacing={2} sx={{ bgcolor: "black", p: "20px", mt: "20px", overflow: "hidden" }}>
                     <Grid xs={12} item sx={{ display: "flex", justifyContent: "center" }}>
                         <Box sx={{ width: { xs: "100%", sm: "100%", md: "70%", lg: "60%" } }}>
-                            <Typography align='center' sx={{ fontSize: "35px", fontWeight: "800", color: MAIN_COLOR }} >
+                            <Typography align='center' sx={{ fontSize: { lg: '33px', md: '30px', sm: '30px', xs: '22px' }, fontWeight: "800", color: MAIN_COLOR }} >
                                 Our Hiring Models
                             </Typography>
-                            <Typography align='center' sx={{ color: "white", fontSize: "20px", fontWeight: "400", fontFamily: "Tisa Sans Pro sans-serif !important" }}>
-                                Explore the engagement models we offer to hire React JS developer for your project         </Typography>
+                            <Typography align='center' sx={{ color: "white", fontSize: { lg: "18px", xs: '16px' }, fontWeight: "400", fontFamily: "Tisa Sans Pro sans-serif !important" }}>
+                                Explore the engagement models we offer to hire Angular JS developer for your project         </Typography>
                         </Box>
                     </Grid>
+                    <Grid container sx={{ justifyContent: 'center', alignItems: 'center' }}>
+                        <Grid item xs={8} sx={{ height: '300px',  }}>
+                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
+                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '22px' }, fontWeight: "800", color: "white" }}>
+                                            Hourly-Basis
+                                        </Typography>
+                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
+                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
+                                        </Typography>
 
-                    <Grid item xs={0} sm={1} md={1.5} lg={2}></Grid>
-                    <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <Box sx={{ lineHeight: "2.5", height: "70%", pt: "20px" }}>
-                            <Typography sx={{ fontSize: "25px", fontWeight: "800", color: "white" }}>
-                                Hourly-Basis
-                            </Typography>
-                            <Typography sx={{ fontWeight: "400", fontSize: "18px", lineHeight: "25px", textAlign: "left", color: "#fff" }}>
-                                As the name suggests, the hourly-basis or pay-as-you-go model offers ReactJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
-                            </Typography>
-
-                        </Box>
-                    </Grid>
-                    <Grid item xs={12} md={5} lg={2.9} sx={{ mt: "15px", display: "flex", p: "15px" }}>
-                        <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring} height="100%" width="100%" />
-                        </Box>
-                    </Grid>
-
-
-
-
-                    <Grid item xs={0} sm={1} md={1.5} lg={2}></Grid>
-                    <Grid item xs={12} md={5} lg={2.9} sx={{ mt: "15px", display: "flex", }}>
-                        <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring2} height="100%" width="100%" />
-                        </Box>
-                    </Grid>
-
-                    <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <Box sx={{ lineHeight: "2.5", height: "70%", pt: "20px" }}>
-                            <Typography sx={{ fontSize: "25px", fontWeight: "800", color: "white" }}>
-                                Part-Time Hiring
-                            </Typography>
-                            <Typography sx={{ fontWeight: "400", fontSize: "18px", lineHeight: "25px", textAlign: "left", color: "#fff" }}>
-                                As the name suggests, the hourly-basis or pay-as-you-go model offers ReactJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
-                            </Typography>
-                        </Box>
-                    </Grid>
+                                    </Box>
+                                </Grid>
+                                <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, display: "flex", }}>
+                                    <Box sx={{ height: "270px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
+                                        <img src={hiring} height="100%" width="100%" />
+                                    </Box>
+                                </Grid>
+                            </Grid>
 
 
-                    <Grid item xs={0} sm={1} md={1.5} lg={2}></Grid>
-                    <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <Box sx={{ lineHeight: "2.5", height: "70%", pt: "20px" }}>
-                            <Typography sx={{ fontSize: "25px", fontWeight: "800", color: "white" }}>
-                                Full-Time Hiring
-                            </Typography>
-                            <Typography sx={{ fontWeight: "400", fontSize: "18px", lineHeight: "25px", textAlign: "left", color: "#fff" }}>
-                                As the name suggests, the hourly-basis or pay-as-you-go model offers ReactJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
-                            </Typography>
+                        </Grid>
 
-                        </Box>
-                    </Grid>
-                    <Grid item xs={12} md={5} lg={2.9} sx={{ mt: "15px", display: "flex", p: "15px" }}>
-                        <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring3} height="100%" width="100%" />
-                        </Box>
                     </Grid>
 
 
 
+
+
+
+                    <Grid container sx={{justifyContent: 'center', alignItems: 'center' }}>
+                        <Grid item xs={8} sx={{ height: '300px',  }}>
+                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                            <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, display: "flex", }}>
+                                    <Box sx={{ height: "270px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
+                                        <img src={hiring2} height="100%" width="100%" />
+                                    </Box>
+                                </Grid>
+                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
+                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '22px' }, fontWeight: "800", color: "white" }}>
+                                            Hourly-Basis
+                                        </Typography>
+                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
+                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
+                                        </Typography>
+
+                                    </Box>
+                                </Grid>
+                                
+                            </Grid>
+
+
+                        </Grid>
+
+
+                    </Grid>
+                   
+                    
+
+                    <Grid container sx={{  justifyContent: 'center', alignItems: 'center' }}>
+                        <Grid item xs={8} sx={{ height: '300px', }}>
+                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
+                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '22px' }, fontWeight: "800", color: "white" }}>
+                                            Hourly-Basis
+                                        </Typography>
+                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
+                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
+                                        </Typography>
+
+                                    </Box>
+                                </Grid>
+                                <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, display: "flex", }}>
+                                    <Box sx={{ height: "270px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
+                                        <img src={hiring3} height="100%" width="100%" />
+                                    </Box>
+                                </Grid>
+                            </Grid>
+
+
+                        </Grid>
+
+                    </Grid>
 
                 </Grid>
                 <Grid container>
@@ -306,37 +331,37 @@ const ReactFrontend = () => {
                         </Grid>
                     </Box>
                 </Grid>
-                <Grid container sx={{ mt: "20px", backgroundImage: `url(${background8})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", p: "20px" }}>
-                    <Grid item xs={0} sm={0} md={1} lg={2}></Grid>
-                    <Grid xs={12} sm={12} md={11} lg={12} item >
+                <Grid container sx={{ mt: "20px", overflow: "hidden", backgroundImage: `url(${background8})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", p: "20px" }}>
+
+                    <Grid item xs={12} sm={12} md={11} lg={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
                         <Box sx={{ width: { xs: "100%", sm: "100%", md: "80%", lg: "70%" } }}>
-                            <Typography sx={{ fontSize: "35px", fontWeight: "800", color: MAIN_COLOR }} >
+                            <Typography sx={{ fontSize: { lg: '33px', md: '30px', sm: '30px', xs: '22px' }, fontWeight: "800", color: MAIN_COLOR }} >
                                 Why Choose Us
                             </Typography>
-                            <Typography sx={{ fontSize: "20px", fontWeight: "400", fontFamily: "Tisa Sans Pro sans-serif !important" }}>
-                                AdelSocial is the best destination to avail React web development and mobile development services. Here are a few reasons why you should hire ReactJS developers from us:
+                            <Typography sx={{ fontSize: { lg: "16px", xs: '15px' }, fontWeight: "400", }}>
+                                AdelSocial is the best destination to avail Angular web development and mobile development services. Here are a few reasons why you should hire AngularJS developers from us:
                             </Typography>
                         </Box>
                     </Grid>
 
                     <Grid item xs={0} sm={0} md={1} lg={2}></Grid>
-                    <Grid item container xs={12} sm={12} md={10} lg={12} pl={"20px"}  >
+                    <Grid item container xs={12} sm={12} md={12} lg={12} pl={"20px"} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}  >
 
                         {
                             [1, 1, 1, 1, 1, 1].map(() => {
                                 return (
-                                    <Grid container xs={12} sm={12} md={6} lg={5} sx={{ mt: "25px" }}>
+                                    <Grid container xs={12} sm={12} md={5.1} lg={4.5} sx={{ mt: "25px", }}>
 
                                         <Box>
                                             <Diversity1Icon sx={{ fontSize: "35px", mr: '10px' }} />
                                         </Box>
 
-                                        <Grid item xs={10}>
-                                            <Typography sx={{ color: MAIN_COLOR, fontWeight: "800", fontSize: "20px", lineHeight: "24px", marginBottom: "8px", fontFamily: "Tisa Sans Pro sans-serif !important" }}>
+                                        <Grid item xs={8} >
+                                            <Typography sx={{ color: MAIN_COLOR, fontWeight: "800", fontSize: "19px", lineHeight: "24px", marginBottom: "8px", fontFamily: "Tisa Sans Pro sans-serif !important" }}>
                                                 Skill and experience:
                                             </Typography>
-                                            <Typography sx={{ fontSize: "14px", fontWeight: "400", fontFamily: "Tisa Sans Pro sans-serif !important" }}>
-                                                Our ReactJS team includes seasoned developers with extensive skills and rich experience in the entire JS frameworks.
+                                            <Typography sx={{ fontSize: { lg: "16px", xs: '15px' }, fontWeight: "400", }}>
+                                                Our AngularJS team includes seasoned developers with extensive skills and rich experience in the entire JS frameworks.
                                             </Typography>
                                         </Grid>
                                     </Grid>
@@ -436,7 +461,7 @@ const ReactFrontend = () => {
                         </Box>
                     </Box>
                 </Grid>
-                <Footer/>
+                <Footer />
             </Container>
 
         </>

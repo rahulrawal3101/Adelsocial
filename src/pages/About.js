@@ -26,6 +26,9 @@ import { useContext, useEffect } from 'react';
 import './Homepage.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import meeting3 from '../assets/meeting3.avif';
+import whoweare from '../assets/whoweare.avif';
+import ourvision from '../assets/ourvision.png';
 
 const data = [
     {
@@ -146,7 +149,7 @@ const About = () => {
                         </Box>
                     </Grid>
                     <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Grid item xs={9.5} sx={{ height: { lg: '430px', xs: '320px' }, mt: '-15rem', backgroundBlendMode: 'multiply', backgroundImage: `url(${adelteam})`, borderRadius: '20px', backgroundSize: { lg: 'cover', md: 'cover', sm: 'cover', xs: 'cover' }, backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }} data-aos="fade-up"></Grid>
+                        <Grid item xs={9.5} sx={{ height: { lg: '430px', xs: '320px' }, mt: '-15rem', backgroundBlendMode: 'multiply', backgroundImage: `url(${meeting3})`, borderRadius: '20px', backgroundSize: { lg: 'cover', md: 'cover', sm: 'cover', xs: 'cover' }, backgroundRepeat: 'no-repeat', backgroundPosition: 'center',backgroundColor:'rgba(0,0,0,0.2)' }} data-aos="fade-up"></Grid>
                         <Grid item xs={9.5} sx={{ display: { lg: 'block', md: 'block', sm: 'none', xs: 'none' }, mt: '10px' }}>
                             <Grid container sx={{ padding: '10px 0px', borderRadius: "20px", border: '3.5px solid black', display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }} >
                                 <Grid item lg={3} md={12} sm={12} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -175,14 +178,14 @@ const About = () => {
                     </Grid>
                     <Grid item lg={5} md={5} sm={12} xs={12} sx={{ mt: { lg: '0px', md: '0px', sm: '5px', xs: '8px' }, display: 'flex', justifyContent: 'center', alignItems: 'center' }} data-aos="fade-left">
                         <Box sx={{ width: { lg: '80%', md: '80%', sm: '100%', xs: '100%' }, height: { lg: '400px', md: '400px', sm: '390px', xs: '350px' }, borderRadius: { lg: '15%', md: '15%', sm: '10%', xs: '10px' }, mt: '25px' }}>
-                            <img src={adelteam} alt='meeting' width={'100%'} height={'95%'} style={{ borderRadius: '10%' }} />
+                            <img src={whoweare} alt='meeting' width={'100%'} height={'95%'} style={{ borderRadius: '10%',objectFit:'cover' }} />
                         </Box>
                     </Grid>
                 </Grid>
                 <Grid container sx={{ flexWrap: "wrap-reverse", display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', bgcolor: '#080808', pb: "20px", padding: '10px', }}>
                     <Grid item lg={5} md={5} sm={12} xs={12} sx={{ mt: { lg: '0px', md: '0px', sm: '5px', xs: '15px' }, display: 'flex', justifyContent: 'center', alignItems: 'center', }} data-aos="fade-right">
                         <Box sx={{ width: { lg: '80%', md: '80%', sm: '100%', xs: '100%' }, height: '350px', borderRadius: '10%' }}>
-                            <img src={adelteam} alt='meeting' width={'100%'} height={'100%'} style={{ borderRadius: '10%' }} />
+                            <img src={ourvision} alt='meeting' width={'100%'} height={'100%'} style={{ borderRadius: '10%' }} />
                         </Box>
                     </Grid>
                     <Grid item lg={4.5} md={5} sm={12} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} data-aos="fade-left">
@@ -195,7 +198,7 @@ const About = () => {
                         <Typography variant='h2' sx={{ fontSize: { lg: '30px', md: '30px', sm: '30px', xs: '28px' }, fontWeight: '600', m: '20px', color: MAIN_COLOR }}>Our Services</Typography>
                         <Typography sx={{ fontSize: { lg: '18px', md: '18px', sm: '16px', xs: '15px' }, textAlign: 'center', fontFamily: 'Comfortaa", cursive', mt: '20px', color: 'grey' }}>We provide a wide range of services to meet all of your IT needs. Check out our main services below:</Typography>
                     </Grid>
-                    <Grid container sx={{ display: "flex", justifyContent: "center", alignItems: "center" }} >
+                    <Grid container sx={{ display: "flex", justifyContent: "center", alignItems: "center", }} >
                         {services}
                     </Grid>
                 </Grid>

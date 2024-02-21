@@ -260,7 +260,7 @@ const Java = () => {
                             </Box>
                         </Grid>
 
-                        <Grid item xs={12} lg={5} sx={{ mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { xs: "none", sm: "none", md: "none", lg: "block" } }}>
+                        <Grid item xs={12} lg={5} sx={{ mt: { xs: "70px", sm: "70px", md: "70px", lg: "55px" }, display: { xs: "none", sm: "none", md: "none", lg: "block" } }}>
                             <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
                                 <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "65%", lg: "60%" }, lineHeight: "3.8", p: "0px 14px 14px 14px ",borderRadius: '17px' }}>
                                     <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -405,11 +405,11 @@ const Java = () => {
                         <Typography sx={{ fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, color: MAIN_COLOR, m: "30px 0px" }} >
                             Java Technologies
                         </Typography>
-                        <Grid container spacing={2}>
+                        <Grid container >
                             {
                                 Technologies1.map((ele) => {
                                     return (
-                                        <Grid item xs={12} sm={6} md={4} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'0px 10px 10px 0px ' }}>
+                                        <Grid item xs={12} sm={6} md={4} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'10px' }}>
                                             <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0", height: "75px", borderRadius: "18px" }} elevation={7}>
                                                 <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
                                                     <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
@@ -433,11 +433,11 @@ const Java = () => {
                         <Typography sx={{fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, m: '30px 0px', fontWeight: "900", color: MAIN_COLOR }} >
                             Application Testing Tools
                         </Typography>
-                        <Grid container spacing={2} >
+                        <Grid container  >
                             {
                                 Technologies2.map((ele) => {
                                     return (
-                                        <Grid item xs={12} sm={6} md={6} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'0px 14px 15px 0px'  }}>
+                                        <Grid item xs={12} sm={6} md={6} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'10px'  }}>
                                         <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0",  height: "75px", borderRadius: "18px" , }} elevation={2}>
                                             <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
                                                 <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
@@ -461,11 +461,11 @@ const Java = () => {
                         <Typography sx={{ fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, m: '30px 0px', fontWeight: "800", color: MAIN_COLOR }} >
                             Payment Gateway Integrations
                         </Typography>
-                        <Grid container spacing={2}>
+                        <Grid container >
                             {
                                 Technologies3.map((ele) => {
                                     return (
-                                        <Grid item xs={12} sm={6} md={4} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'0px 10px 10px 0px' }}>
+                                        <Grid item xs={12} sm={6} md={4} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'10px' }}>
                                             <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0", p: "10px", height: "75px", borderRadius: "18px" }} elevation={2}>
                                                 <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
                                                     <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}

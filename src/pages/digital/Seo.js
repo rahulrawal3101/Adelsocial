@@ -279,7 +279,7 @@ const Seo = () => {
                 </Grid>
 
 
-                <Box sx={{  display: "flex", justifyContent: "center", alignItems: "center", p: { xs: "8px", sm: "8px", md: "8px", lg: "15px" } , bgcolor:'black'}}>
+                <Box sx={{  display: "flex", justifyContent: "center", alignItems: "center", p: { xs: "8px", sm: "8px", md: "8px", lg: "15px" } , bgcolor:'#424242'}}>
                     <Grid container xs={12} sm={12} md={10} lg={9}>
                         <Grid xs={12} item sx={{ display: "flex", justifyContent: "center" }}>
                             <Box data-aos='fade-up'>
@@ -298,7 +298,7 @@ const Seo = () => {
                                     six.map((ele) => {
                                         return (
                                             <Grid item xs={12} sm={6} md={6} data-aos='fade-up' sx={{ mt: "15px" , pb:'10px', }} >
-                                                <Paper sx={{ height:{lg:'180px', md:'180px', sm:'200px',xs:'205px'}, overflow: "hidden", borderRadius: "35px 10px 35px 10px",boxShadow: ' 0px 0px 13px 0px rgba(9,49,150,1)',display:'flex', justifyContent:'left', alignItems:'flex-start', flexDirection:'column', border:`1px solid ${MAIN_COLOR}`, padding:'20px' }} elevation={3}>
+                                                <Paper sx={{ height:{lg:'180px', md:'180px', sm:'200px',xs:'205px'}, overflow: "hidden", borderRadius: "35px 10px 35px 10px",display:'flex', justifyContent:'left', alignItems:'flex-start', flexDirection:'column', border:`1px solid ${MAIN_COLOR}`, padding:'20px' }} elevation={3}>
                                                     <Typography sx={{ fontSize: "23px", fontWeight: "800", color: MAIN_COLOR ,}} >
                                                         {ele.title}
                                                     </Typography>
@@ -318,7 +318,7 @@ const Seo = () => {
 
 
 
-                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", bgcolor: "black" ,}}>
+                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", bgcolor: "#424242" ,}}>
                     <Grid container xs={12} sm={12} md={10} lg={8}>
                         <Grid xs={12} item sx={{ display: "flex", justifyContent: "center" }}>
                             <Box data-aos='fade-up'>
@@ -337,7 +337,7 @@ const Seo = () => {
                                     four.map((ele) => {
                                         return (
                                             <Grid item xs={12} sm={12} md={6} data-aos='fade-up' sx={{ mt: "30px" }}>
-                                                <Paper sx={{ height: {lg:"200px", md:'200px', xs:'220px', xs:'270px'}, overflow: "hidden", borderRadius: "35px 10px 35px 10px", p: "25px", boxShadow: ' 0px 0px 13px 0px rgba(9,49,150,1)',display:'flex', justifyContent:'left', alignItems:'flex-start', flexDirection:'column',border:`1px solid ${MAIN_COLOR}` }} elevation={3}>
+                                                <Paper sx={{ height: {lg:"200px", md:'200px', xs:'220px', xs:'270px'}, overflow: "hidden", borderRadius: "35px 10px 35px 10px", p: "25px",display:'flex', justifyContent:'left', alignItems:'flex-start', flexDirection:'column',border:`1px solid ${MAIN_COLOR}` }} elevation={3}>
                                                     <Typography sx={{ fontSize: "23px", fontWeight: "800", color: MAIN_COLOR , }} >
                                                         {ele.title}
                                                     </Typography>

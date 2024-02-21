@@ -37,42 +37,42 @@ const ReactNative = () => {
     })
  },[])
 
-    const AllBuisness = [{
-        icon: <ApartmentIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
-        name: "Healthcare"
-    },
-    {
-        icon: <ChairAltIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
-        name: "Education & E-Learning"
-    },
-    {
-        icon: <AddShoppingCartIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
-        name: "Retail & E-Commerce"
-    },
-    {
-        icon: <AccountBalanceIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
-        name: "Banking & Finance"
-    },
-    {
-        icon: <LuggageIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
-        name: "Travel & Tourism"
-    },
-    {
-        icon: <LiveTvIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
-        name: "Media & Entertainment"
-    },
+ const AllBuisness = [{
+    icon: <ApartmentIcon sx={{ fontSize: "50px", color: MAIN_COLOR }} />,
+    name: "Healthcare"
+},
+{
+    icon: <ChairAltIcon sx={{ fontSize: "50px", color: MAIN_COLOR }} />,
+    name: "Education & E-Learning"
+},
+{
+    icon: <AddShoppingCartIcon sx={{ fontSize: "50px", color: MAIN_COLOR }} />,
+    name: "Retail & E-Commerce"
+},
+{
+    icon: <AccountBalanceIcon sx={{ fontSize: "50px", color: MAIN_COLOR }} />,
+    name: "Banking & Finance"
+},
+{
+    icon: <LuggageIcon sx={{ fontSize: "50px", color: MAIN_COLOR }} />,
+    name: "Travel & Tourism"
+},
+{
+    icon: <LiveTvIcon sx={{ fontSize: "50px", color: MAIN_COLOR }} />,
+    name: "Media & Entertainment"
+},
 
-    {
-        icon: <LocalShippingIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
-        name: "Transport & Logistics"
-    },
+{
+    icon: <LocalShippingIcon sx={{ fontSize: "50px", color: MAIN_COLOR }} />,
+    name: "Transport & Logistics"
+},
 
-    {
-        icon: <DomainIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
-        name: "Real Estate"
-    },
+{
+    icon: <DomainIcon sx={{ fontSize: "50px", color: MAIN_COLOR }} />,
+    name: "Real Estate"
+},
 
-    ]
+]
 
 
     return (
@@ -111,7 +111,7 @@ const ReactNative = () => {
                                     </Box>
                                 </Grid>
 
-                                <Grid item xs={12} lg={5} sx={{ mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { xs: "none", sm: "none", md: "none", lg: "block" } }}>
+                                <Grid item xs={12} lg={5} sx={{ mt:  { xs: "70px", sm: "70px", md: "70px", lg: "55px" }, display: { xs: "none", sm: "none", md: "none", lg: "block" } }}>
                                     <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
                                         <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "65%", lg: "60%" }, lineHeight: "3.8", p: "0px 14px 14px 14px ", borderRadius: '17px' }}>
                                             <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -209,15 +209,15 @@ const ReactNative = () => {
                         </Box>
                     </Box>
                     <Box sx={{ display: "flex", justifyContent: "center", mt: "20px" }}>
-                        <Grid container sx={{ width: { xs: "99%", sm: "99%", md: "70%", lg: "80%" }, display:'flex', justifyContent:'space-between', alignItems:'center', bgcolor:'black', borderRadius:'10px'}} >
+                        <Grid container sx={{ width: { xs: "99%", sm: "99%", md: "70%", lg: "80%" }, display:'flex', justifyContent:'space-between', alignItems:'center',  borderRadius:'10px'}} >
                             {
                                 AllBuisness.map((ele) => {
                                     return (
-                                        <Grid item xs={12} sm={12} md={6} lg={2.8} data-aos="fade-up" sx={{ boxShadow: '1px 1px 5px 0px rgba(65,100,240,1)',m:'5px', m:'10px 9px' ,borderRadius:'10px'}} >
+                                        <Grid item xs={12} sm={12} md={6} lg={2.8} data-aos="fade-up" sx={{ boxShadow: '1px 1px 5px 0px rgba(65,100,240,1)', m:'10px 9px' ,borderRadius:'10px'}} >
                                             <Box sx={{height:'210px', bgcolor:'black',borderRadius:'10px', border:'1px solid #0277bd'}}>
                                                 <Box sx={{ p: "20px", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
                                                     {ele.icon}
-                                                    <Typography align='center' sx={{ fontSize: "28px", fontWeight: "800", color: 'white' }}>{ele.name}</Typography>
+                                                    <Typography align='center' sx={{ fontSize: "25px", fontWeight: "800", color: 'white' }}>{ele.name}</Typography>
                                                 </Box>
                                             </Box>
                                         </Grid>

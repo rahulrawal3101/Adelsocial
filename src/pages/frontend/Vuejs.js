@@ -63,7 +63,7 @@ const VueFrontend = () => {
                                 </Box>
                             </Grid>
 
-                            <Grid item xs={12} lg={5} sx={{ mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { xs: "none", sm: "none", md: "none", lg: "block" } }}>
+                            <Grid item xs={12} lg={5} sx={{ mt:  { xs: "70px", sm: "70px", md: "70px", lg: "55px" }, display: { xs: "none", sm: "none", md: "none", lg: "block" } }}>
                                 <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
                                     <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "65%", lg: "60%" }, lineHeight: "3.8", p: "0px 14px 14px 14px ",borderRadius: '17px' }}>
                                         <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -201,135 +201,124 @@ const VueFrontend = () => {
                         </Grid>
                     </Box>
                 </Grid>
-                <Grid container spacing={2} sx={{ bgcolor: "#002F96", p: "20px", mt: "20px",overflow:"hidden" }}>
+                <Grid container spacing={2} sx={{ bgcolor: "black", p: "20px", mt: "20px", overflow: "hidden" }}>
                     <Grid xs={12} item sx={{ display: "flex", justifyContent: "center" }}>
                         <Box sx={{ width: { xs: "100%", sm: "100%", md: "70%", lg: "60%" } }}>
-                            <Typography align='center' sx={{ fontSize:{lg:'33px', md:'30px', sm:'30px', xs:'22px'}, fontWeight: "800", color: MAIN_COLOR }} >
+                            <Typography align='center' sx={{ fontSize: { lg: '33px', md: '30px', sm: '30px', xs: '22px' }, fontWeight: "800", color: MAIN_COLOR }} >
                                 Our Hiring Models
                             </Typography>
-                            <Typography align='center' sx={{ color: "white", fontSize: {lg:"16px", xs:'16px'}, fontWeight: "400", fontFamily: "Tisa Sans Pro sans-serif !important" }}>
-                                Explore the engagement models we offer to hire Veu Js developer for your project         </Typography>
+                            <Typography align='center' sx={{ color: "white", fontSize: { lg: "18px", xs: '16px' }, fontWeight: "400", fontFamily: "Tisa Sans Pro sans-serif !important" }}>
+                                Explore the engagement models we offer to hire Angular JS developer for your project         </Typography>
                         </Box>
                     </Grid>
+                    <Grid container sx={{ justifyContent: 'center', alignItems: 'center' }}>
+                        <Grid item xs={8} sx={{ height: '300px',  }}>
+                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
+                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '22px' }, fontWeight: "800", color: "white" }}>
+                                            Hourly-Basis
+                                        </Typography>
+                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
+                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
+                                        </Typography>
 
-                    <Grid item xs={0} sm={1} md={1.5} lg={2}></Grid>
-                    <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <Box sx={{ lineHeight: "2.5", height: "70%", pt: {lg:"20px", md:'20px', sx:'10px', xs:'0px'} }}>
-                            <Typography sx={{ fontSize: {lg:"25px", md:'24px', sm:'23px', xs:'22px'}, fontWeight: "800", color: "white" }}>
-                                Hourly-Basis
-                            </Typography>
-                            <Typography sx={{  fontSize: {lg:"17px", xs:'15px'}, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
-                                As the name suggests, the hourly-basis or pay-as-you-go model offers VeuJs development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
-                            </Typography>
+                                    </Box>
+                                </Grid>
+                                <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, display: "flex", }}>
+                                    <Box sx={{ height: "270px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
+                                        <img src={hiring} height="100%" width="100%" />
+                                    </Box>
+                                </Grid>
+                            </Grid>
 
-                        </Box>
-                    </Grid>
-                    <Grid item data-aos='fade-left' xs={12} md={5} lg={2.9} sx={{ mt: {lg:"15px", xs:'22px'}, display: "flex", p: "15px", }}>
-                        <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring} height="100%" width="100%" />
-                        </Box>
-                    </Grid>
-
-
-
-
-                    <Grid item xs={0} sm={1} md={1.5} lg={2}></Grid>
-                    <Grid item data-aos='fade-right' xs={12} md={5} lg={2.9} sx={{ mt: "15px", display: "flex", }}>
-                        <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring2} height="100%" width="100%" />
-                        </Box>
-                    </Grid>
-
-                    <Grid item xs={12} md={5} lg={6} sx={{ mt: {lg:"15px", xs:'1px'}, display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <Box sx={{ lineHeight: "2.5", height: "70%", pt: "20px" }}>
-                            <Typography sx={{ fontSize: {lg:"25px", md:'24px', sm:'23px', xs:'22px'}, fontWeight: "800", color: "white" }}>
-                                Part-Time Hiring
-                            </Typography>
-                            <Typography sx={{ fontSize: {lg:"17px", xs:'15px'}, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
-                                As the name suggests, the hourly-basis or pay-as-you-go model offers VeuJs development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
-                            </Typography>
-                        </Box>
-                    </Grid>
-
-
-                    <Grid item xs={0} sm={1} md={1.5} lg={2}></Grid>
-                    <Grid item xs={12} md={5} lg={6} sx={{ mt: {lg:"15px", xs:'1px'}, display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <Box sx={{ lineHeight: "2.5", height: "70%", pt: "20px" }}>
-                            <Typography sx={{ fontSize: {lg:"25px", md:'24px', sm:'23px', xs:'22px'}, fontWeight: "800", color: "white" }}>
-                                Full-Time Hiring
-                            </Typography>
-                            <Typography sx={{  fontSize: {lg:"17px", xs:'15px'}, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
-                                As the name suggests, the hourly-basis or pay-as-you-go model offers VeuJs development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
-                            </Typography>
-
-                        </Box>
-                    </Grid>
-                    <Grid item data-aos='fade-left' xs={12} md={5} lg={2.9} sx={{ mt: {lg:"15px", xs:'22px'}, display: "flex", p: "15px" }}>
-                        <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring3} height="100%" width="100%" />
-                        </Box>
-                    </Grid>
-
-
-
-
-                </Grid>
-                <Grid container sx={{overflow:"hidden"}}>
-                    <Grid xs={12} item sx={{ display: "flex", justifyContent: "center" }}>
-                        <Box sx={{ width: "60%" }}>
-                            <Typography align='center' sx={{ fontSize:{lg:'33px', md:'30px', sm:'30px', xs:'22px'}, fontWeight: "800", color: MAIN_COLOR }} >
-                                Our Hiring Process
-                            </Typography>
-                            <Typography align='center' sx={{ fontSize: {lg:"17px", xs:'15px'}, fontWeight: "400", }}>
-                                Hire Veu Js Developer And/Or VeuJs Developer In A Few Simple Steps. Discover How Our Process Works.
-                            </Typography>
-                        </Box>
-                    </Grid>
-                    <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: "15px" }}>
-                        <Grid container xs={12} sm={12} md={10} lg={8} spacing={3}>
-                            {
-                                [1, 1, 1, 1].map(() => {
-                                    return (
-                                        <Grid item data-aos='fade-up' xs={12} sm={6} md={6} sx={{ mt: "30px" }}>
-                                            <Paper sx={{ borderRadius: "35px 10px 35px 10px", p: "15px" }} elevation={3}>
-                                                <Box sx={{ bgcolor: "#f4f4f4", p: "13px", borderRadius: "100%", width: "fit-content", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                                    <HubIcon sx={{ fontSize: "45px" }} />
-                                                </Box>
-                                                <Typography sx={{ fontSize: {lg:"19px", md:'19px', sm:'17px', xs:'17px'}, fontWeight: "800", color: MAIN_COLOR }} >
-                                                    Comprehensive skillset
-                                                </Typography>
-                                                <Typography sx={{ mt: "10px",  fontSize: {lg:"16px", xs:'15px'}, fontWeight: "400",  }}>
-                                                    Get flawless, high-quality, and optimized codes which are written by expert PHP professionals to ensure that your application runs seamlessly.
-                                                </Typography>
-                                            </Paper>
-                                        </Grid>
-                                    )
-                                })
-                            }
 
                         </Grid>
-                    </Box>
-                </Grid>
-                <Grid container sx={{ mt: "20px",overflow:"hidden", backgroundImage: `url(${background8})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", p: "20px" }}>
+
+                    </Grid>
+
+
+
+
+
+
+                    <Grid container sx={{justifyContent: 'center', alignItems: 'center' }}>
+                        <Grid item xs={8} sx={{ height: '300px',  }}>
+                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                            <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, display: "flex", }}>
+                                    <Box sx={{ height: "270px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
+                                        <img src={hiring2} height="100%" width="100%" />
+                                    </Box>
+                                </Grid>
+                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
+                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '22px' }, fontWeight: "800", color: "white" }}>
+                                            Hourly-Basis
+                                        </Typography>
+                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
+                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
+                                        </Typography>
+
+                                    </Box>
+                                </Grid>
+                                
+                            </Grid>
+
+
+                        </Grid>
+
+
+                    </Grid>
                    
-                    <Grid  item xs={12} sm={12} md={11} lg={12} sx={{display:'flex', justifyContent:'center', alignItems:'center'}} >
+                    
+
+                    <Grid container sx={{  justifyContent: 'center', alignItems: 'center' }}>
+                        <Grid item xs={8} sx={{ height: '300px', }}>
+                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
+                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '22px' }, fontWeight: "800", color: "white" }}>
+                                            Hourly-Basis
+                                        </Typography>
+                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
+                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
+                                        </Typography>
+
+                                    </Box>
+                                </Grid>
+                                <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, display: "flex", }}>
+                                    <Box sx={{ height: "270px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
+                                        <img src={hiring3} height="100%" width="100%" />
+                                    </Box>
+                                </Grid>
+                            </Grid>
+
+
+                        </Grid>
+
+                    </Grid>
+
+                </Grid>
+                <Grid container sx={{ mt: "20px", overflow: "hidden", backgroundImage: `url(${background8})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", p: "20px" }}>
+
+                    <Grid item xs={12} sm={12} md={11} lg={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
                         <Box sx={{ width: { xs: "100%", sm: "100%", md: "80%", lg: "70%" } }}>
-                            <Typography sx={{ fontSize:{lg:'33px', md:'30px', sm:'30px', xs:'22px'}, fontWeight: "800", color: MAIN_COLOR }} >
+                            <Typography sx={{ fontSize: { lg: '33px', md: '30px', sm: '30px', xs: '22px' }, fontWeight: "800", color: MAIN_COLOR }} >
                                 Why Choose Us
                             </Typography>
-                            <Typography sx={{ fontSize: {lg:"16px", xs:'15px'}, fontWeight: "400",  }}>
-                                AdelSocial is the best destination to avail Veu Jsweb development and mobile development services. Here are a few reasons why you should hire VeuJs developers from us:
+                            <Typography sx={{ fontSize: { lg: "16px", xs: '15px' }, fontWeight: "400", }}>
+                                AdelSocial is the best destination to avail Angular web development and mobile development services. Here are a few reasons why you should hire AngularJS developers from us:
                             </Typography>
                         </Box>
                     </Grid>
 
                     <Grid item xs={0} sm={0} md={1} lg={2}></Grid>
-                    <Grid item container xs={12} sm={12} md={10} lg={12} pl={"20px"} sx={{display:'flex', justifyContent:'center', alignItems:'center'}}  >
+                    <Grid item container xs={12} sm={12} md={12} lg={12} pl={"20px"} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center',}}  >
 
                         {
                             [1, 1, 1, 1, 1, 1].map(() => {
                                 return (
-                                    <Grid container xs={12} sm={12} md={6} lg={5} sx={{ mt: "25px", }}>
+                                    <Grid container xs={12} sm={12} md={5.1} lg={4.5} sx={{ mt: "25px", }}>
 
                                         <Box>
                                             <Diversity1Icon sx={{ fontSize: "35px", mr: '10px' }} />
@@ -339,8 +328,8 @@ const VueFrontend = () => {
                                             <Typography sx={{ color: MAIN_COLOR, fontWeight: "800", fontSize: "19px", lineHeight: "24px", marginBottom: "8px", fontFamily: "Tisa Sans Pro sans-serif !important" }}>
                                                 Skill and experience:
                                             </Typography>
-                                            <Typography sx={{ fontSize: {lg:"16px",xs:'15px'}, fontWeight: "400",  }}>
-                                                Our VeuJs team includes seasoned developers with extensive skills and rich experience in the entire JS frameworks.
+                                            <Typography sx={{ fontSize: { lg: "16px", xs: '15px' }, fontWeight: "400", }}>
+                                                Our AngularJS team includes seasoned developers with extensive skills and rich experience in the entire JS frameworks.
                                             </Typography>
                                         </Grid>
                                     </Grid>
@@ -350,6 +339,7 @@ const VueFrontend = () => {
 
                     </Grid>
                 </Grid>
+                
 
                 <Grid container sx={{ backgroundImage: `url(${vector})`, p: "20px",overflow:"hidden" }}>
                     <Grid item xs={12} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>

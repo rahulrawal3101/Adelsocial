@@ -201,7 +201,7 @@ const DigitalMarketing = () => {
 
                     </Grid>
                 </Box>
-                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: "10px" }}>
+                {/* <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: "10px" }}>
                     <Grid container xs={4} sx={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
                         <Grid item data-aos='fade-right' xs={12} sm={12} md={5.5} sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }} >
                            <Box sx={{width:{lg:'180px', md:'160px', sm:'140px', xs:'120px'}, height:{lg:'85px', md:'80px', sm:'76px', xs:'70px'} }}>
@@ -219,9 +219,9 @@ const DigitalMarketing = () => {
 
                         </Grid>
                     </Grid>
-                </Box>
+                </Box> */}
 
-                <Box sx={{ display:{ lg:"flex", md:'flex', sm:'flex', xs:'none'}, justifyContent: "center", alignItems: "center", bgcolor: "black", p: "15px", m: '30px' }}>
+                {/* <Box sx={{ display:{ lg:"flex", md:'flex', sm:'flex', xs:'none'}, justifyContent: "center", alignItems: "center", bgcolor: "black", p: "15px", m: '30px' }}>
                     <Grid container xs={12}  >
                         <Grid item xs={2} sm={2} md={2} lg={2} data-aos='fade-up' sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                             <Box sx={{width:{lg:'170px', md:'130px', sm:'90px', xs:'70px'}, height:{lg:'60px', md:'50px', sm:'50px', xs:'40px'}}}>
@@ -262,7 +262,7 @@ const DigitalMarketing = () => {
                         </Box>
                         </Grid>
                     </Grid>
-                </Box>
+                </Box> */}
                 <Grid container sx={{ p: { xs: "8px", sm: "8px", md: "8px", lg: "15px", m: '20px 0px' } , justifyContent:'space-evenly', alignItems:'center'}}>
                     
                     <Grid item xs={12} md={5} lg={5} data-aos='fade-up'>
@@ -293,7 +293,7 @@ const DigitalMarketing = () => {
                 </Grid>
 
 
-                <Box sx={{  display: "flex", justifyContent: "center", alignItems: "center", p: { xs: "8px", sm: "8px", md: "8px", lg: "15px" } , bgcolor:'black'}}>
+                <Box sx={{  display: "flex", justifyContent: "center", alignItems: "center", p: { xs: "8px", sm: "8px", md: "8px", lg: "15px" } , bgcolor:'#424242'}}>
                     <Grid container xs={12} sm={12} md={10} lg={9}>
                         <Grid xs={12} item sx={{ display: "flex", justifyContent: "center" }}>
                             <Box data-aos='fade-up'>
@@ -312,7 +312,7 @@ const DigitalMarketing = () => {
                                     six.map((ele) => {
                                         return (
                                             <Grid item xs={12} sm={6} md={6} data-aos='fade-up' sx={{ mt: "15px" , pb:'10px', }} >
-                                                <Paper sx={{ height:{lg:'180px', md:'180px', sm:'200px',xs:'220px'}, overflow: "hidden", borderRadius: "35px 10px 35px 10px",boxShadow: ' 0px 0px 13px 0px rgba(9,49,150,1)',display:'flex', justifyContent:'left', alignItems:'flex-start', flexDirection:'column', border:`1px solid ${MAIN_COLOR}`, padding:'20px' }} elevation={3}>
+                                                <Paper sx={{ height:{lg:'180px', md:'180px', sm:'200px',xs:'220px'}, overflow: "hidden", borderRadius: "35px 10px 35px 10px",display:'flex', justifyContent:'left', alignItems:'flex-start', flexDirection:'column', border:`1px solid ${MAIN_COLOR}`, padding:'20px' }} elevation={3}>
                                                     <Typography sx={{ fontSize: "23px", fontWeight: "800", color: MAIN_COLOR ,}} >
                                                         {ele.title}
                                                     </Typography>
@@ -332,7 +332,7 @@ const DigitalMarketing = () => {
 
 
 
-                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", bgcolor: "black" ,}}>
+                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", bgcolor: "#424242" ,}}>
                     <Grid container xs={12} sm={12} md={10} lg={8}>
                         <Grid xs={12} item sx={{ display: "flex", justifyContent: "center" }}>
                             <Box data-aos='fade-up'>
@@ -351,7 +351,7 @@ const DigitalMarketing = () => {
                                     four.map((ele) => {
                                         return (
                                             <Grid item xs={12} sm={12} md={6} data-aos='fade-up' sx={{ mt: "30px" }}>
-                                                <Paper sx={{ height: {lg:"210px", md:'210px', xs:'220px', xs:'280px'}, overflow: "hidden", borderRadius: "35px 10px 35px 10px", p: "25px", boxShadow: ' 0px 0px 13px 0px rgba(9,49,150,1)',display:'flex', justifyContent:'left', alignItems:'flex-start', flexDirection:'column',border:`1px solid ${MAIN_COLOR}`}} elevation={3}>
+                                                <Paper sx={{ height: {lg:"210px", md:'210px', xs:'220px', xs:'280px'}, overflow: "hidden", borderRadius: "35px 10px 35px 10px", p: "25px",display:'flex', justifyContent:'left', alignItems:'flex-start', flexDirection:'column',border:`1px solid ${MAIN_COLOR}`}} elevation={3}>
                                                     <Typography sx={{ fontSize: "23px", fontWeight: "800", color: MAIN_COLOR , }} >
                                                         {ele.title}
                                                     </Typography>

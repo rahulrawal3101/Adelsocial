@@ -159,62 +159,62 @@ const DotNet = () => {
     },]
 
     const netInfo3 = [{
-        icon: <PeopleOutlineIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <PeopleOutlineIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Team Selection",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <PsychologyIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <PsychologyIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Interview",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <BackupTableIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <BackupTableIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Agreement",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <DescriptionIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <DescriptionIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Project Kick-off",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <PeopleOutlineIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <PeopleOutlineIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Team Selection",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <PsychologyIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <PsychologyIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Interview",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <BackupTableIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <BackupTableIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Agreement",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <DescriptionIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <DescriptionIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Project Kick-off",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <PeopleOutlineIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <PeopleOutlineIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Team Selection",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <PsychologyIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <PsychologyIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Interview",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <BackupTableIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <BackupTableIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Agreement",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <DescriptionIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <DescriptionIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Project Kick-off",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
@@ -255,7 +255,7 @@ const DotNet = () => {
                                 </Box>
                             </Grid>
 
-                            <Grid item xs={12} lg={5} sx={{ mt: { xs: "70px", sm: "70px", md: "70px", lg: "35px" }, display: { xs: "none", sm: "none", md: "none", lg: "block" } }}>
+                            <Grid item xs={12} lg={5} sx={{ mt: { xs: "70px", sm: "70px", md: "70px", lg: "55px" }, display: { xs: "none", sm: "none", md: "none", lg: "block" } }}>
                                 <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
                                     <Paper sx={{ height: "fit-content", width: { xs: "90%", sm: "90%", md: "65%", lg: "60%" }, lineHeight: "3.8", p: "0px 14px 14px 14px ",borderRadius: '17px' }}>
                                         <Box sx={{ mt: "-20px", borderRadius: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -393,11 +393,11 @@ const DotNet = () => {
                             The .NET software framework, developed by Microsoft, has gained popularity in the web development industry as it allows the creation of feature-rich web applications in a quick time. Here are a few reasons why you should opt for Dot NET development for your web development project.
                         </Typography>
 
-                        <Box sx={{ display: "flex", alignItems: "center", flexWrap: "wrap" }}>
-                            <Box data-aos='fade-up' sx={{ mt: "20px", height: { xs: "300px", sm: "300px", md: "320px", lg: "400px" } }}>
-                                <img src={orangenet} style={{ borderRadius: '90px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', }} alt='pic' height="100%" width="100%" />
+                        <Box sx={{ display: "flex", alignItems: "center",alignItems:'center', flexWrap: "wrap" }}>
+                            <Box data-aos='fade-up' sx={{ mt: "20px", height: { xs: "250px", sm: "290px", md: "320px", lg: "400px" } }}>
+                                <img src={orangenet} style={{ borderRadius: '20px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', }} alt='pic' height="100%" width="100%" />
                             </Box>
-                            <Box sx={{ml:'30px'}}>
+                            <Box sx={{ml:'30px' ,}}>
                                 {
                                     CheckBoxData.map((ele) => {
                                         return (
@@ -422,15 +422,15 @@ const DotNet = () => {
                         </Typography>
                         <Typography sx={{ fontSize: { xs: '12px', lg: '16px'},color: 'white'  }}>Our .NET developers have an iron grip of core and advanced .NET technologies to facilitate the agile development of quality-oriented web apps for your business. Some of the cutting-edge .NET technologies and tools we work on include:</Typography>
 
-                        <Box>
+                        <Box >
                             <Typography sx={{ fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, color: MAIN_COLOR, m: "30px 0px" }} >
                                 Dot NET Technologies
                             </Typography>
-                            <Grid container spacing={2}>
+                            <Grid container sx={{display:'flex', justifyContent:'space-between',alignItems:'center'}}>
                                 {
                                     Technologies1.map((ele) => {
                                         return (
-                                            <Grid item xs={12} sm={6} md={4} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'0px 10px 10px 0px ' }}>
+                                            <Grid item xs={12} sm={6} md={4} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'10px 10px 10px 10px' }}>
                                                 <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0", height: "75px", borderRadius: "18px" }} elevation={7}>
                                                     <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
                                                         <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
@@ -454,11 +454,11 @@ const DotNet = () => {
                             <Typography sx={{fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, m: '30px 0px', fontWeight: "900", color: MAIN_COLOR }} >
                                 Application Testing Tools
                             </Typography>
-                            <Grid container spacing={2} >
+                            <Grid container  >
                                 {
                                     Technologies2.map((ele) => {
                                         return (
-                                            <Grid item xs={12} sm={6} md={6} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'0px 14px 15px 0px'  }}>
+                                            <Grid item xs={12} sm={6} md={6} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'10px 10px 10px 10px'   }}>
                                             <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0",  height: "75px", borderRadius: "18px" , }} elevation={2}>
                                                 <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
                                                     <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
@@ -482,11 +482,11 @@ const DotNet = () => {
                             <Typography sx={{ fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, m: '30px 0px', fontWeight: "800", color: MAIN_COLOR }} >
                                 Payment Gateway Integrations
                             </Typography>
-                            <Grid container spacing={2}>
+                            <Grid container >
                                 {
                                     Technologies3.map((ele) => {
                                         return (
-                                            <Grid item xs={12} sm={6} md={4} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'0px 10px 10px 0px' }}>
+                                            <Grid item xs={12} sm={6} md={4} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'10px 10px 10px 10px' }}>
                                                 <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0", p: "10px", height: "75px", borderRadius: "18px" }} elevation={2}>
                                                     <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
                                                         <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
@@ -541,10 +541,12 @@ const DotNet = () => {
                                     Our Flexible Engagement Models
                                 </Typography>
                             </Grid>
+                            <Grid container sx={{justifyContent:'center',alignItems:'center'}}>
                             <Grid item xs={12} sm={12} md={6} lg={4}>
                                 <Card sx={{ maxWidth: 400, p: "15px", m: "15px", boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', }} elevation={5}  >
                                     <CardActionArea>
                                         <CardMedia
+                                        
                                             component="img"
                                             height="250"
                                             width="300"
@@ -612,11 +614,14 @@ const DotNet = () => {
                                 </Card>
                             </Grid>
 
+                            </Grid>
+                            
+
                         </Grid>
                     </Box>
                 </Grid>
 
-                <Grid item xs={12} sx={{ bgcolor: "#002F96" }}>
+                <Grid item xs={12} sx={{ bgcolor: "#424242" }}>
                     <Box sx={{ display: "flex", justifyContent: "center" }}>
                         <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, mt: "50px" }}>
                             <Typography sx={{ fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, fontWeight: "800", color: "white" }} >
@@ -625,13 +630,13 @@ const DotNet = () => {
                         </Box>
                     </Box>
                     <Box sx={{ display: "flex", justifyContent: "center", mt: "30px" }}>
-                        <Grid container sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" } }} spacing={3}>
+                        <Grid container sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" ,} }} spacing={3}>
                             {
                                 netInfo3.map((ele) => {
                                     return (
 
                                         <Grid item xs={12} sm={12} md={6} lg={3} sx={{ p: "15px 10px 15px 10px", lineHeight: "2" }}>
-                                            <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", bgcolor: "white", height: "100px", width: "100px", borderRadius: "100%" }}>
+                                            <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", bgcolor: "white", height: "80px", width: "80px", borderRadius: "100%" }}>
                                                 {ele.icon}
                                             </Box>
                                             <Typography sx={{ mt: "15px", color: "white", fontWeight: "800",wordSpacing: "2px", letterSpacing: "px" }}>{ele.title}</Typography>

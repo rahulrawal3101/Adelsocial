@@ -11,7 +11,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { MAIN_COLOR } from '../constant';
 import Typewriter from 'typewriter-effect';
 import { AdelContext } from '../store/Context';
-import './SideDrawer.css'
+import './SideDrawer.css';
+
 const socialIcons = [{ icon: <InstagramIcon sx={{ color: MAIN_COLOR, '&:hover': { color: MAIN_COLOR } }} />, name: "insta", link: 'https://www.instagram.com/adelsociall/' }, { icon: <FacebookIcon sx={{ color: MAIN_COLOR, '&:hover': { color: MAIN_COLOR } }} />, name: "face", link: 'https://www.facebook.com/AdelSocial/' }, { icon: <TwitterIcon sx={{ color: MAIN_COLOR, '&:hover': { color: MAIN_COLOR } }} />, name: "twit", link: 'https://twitter.com/i/flow/login?redirect_after_login=%2Fadelsocial' }, { icon: <LinkedInIcon sx={{ color: MAIN_COLOR, '&:hover': { color: MAIN_COLOR } }} />, name: "link", link: 'https://www.linkedin.com/company/adelsocial/' }];
 
 const data = [

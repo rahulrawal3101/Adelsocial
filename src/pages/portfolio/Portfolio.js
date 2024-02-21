@@ -17,7 +17,8 @@ import mytutor from '../../assets/mytutor.mp4'
 import { useNavigate } from 'react-router-dom';
 import SecondSideDrawer from '../../components/SecondSideDrawer';
 import MenuIcon from '@mui/icons-material/Menu';
-import FirstSideDrawer from '../../components/FirstSideDrawer';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import PrivacyTipOutlinedIcon from '@mui/icons-material/PrivacyTipOutlined';
 
 
 const Portfolio = () => {
@@ -47,7 +48,7 @@ const Portfolio = () => {
                 </Grid>
                 <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center', bgcolor: 'transparent', zIndex: 9999, background: "rgba(0,0,0,0.2)", p: '5px 5px' }}>
                     <Grid item lg={3} md={3} sm={4} xs={4} sx={{ display: 'flex', justifyContent: 'left', }}>
-                        <Box sx={{ width: { lg: '160px', md: '120px', sm: '110px', xs: '110px' }, height: { lg: '50px', md: '40px', sm: '40px', xs: '36px' }, bgcolor: 'white', borderRadius: '10px' }}>
+                        <Box sx={{ width: { lg: '160px', md: '120px', sm: '110px', xs: '110px' }, height: { lg: '50px', md: '40px', sm: '40px', xs: '36px' }, bgcolor: 'white', borderRadius: '10px',cursor:'pointer' }} onClick={()=>{navigate('/')}}>
 
                             <img src={adellogo} style={{ width: '100%', height: '100%' }} />
                         </Box>
@@ -60,9 +61,9 @@ const Portfolio = () => {
 
                     </Grid>
                     <Grid item xs={3} sx={{ display: { lg: 'flex', md: 'flex', sm: 'none', xs: 'none' }, justifyContent: 'right', alignItems: 'center', p: '0px 15px' }}>
-                        <HelpOutlineOutlinedIcon sx={{ color: '#eeeeee', fontSize: '25px', mr: '7px' }} />
-                        <LanguageOutlinedIcon sx={{ color: '#eeeeee', fontSize: '25px', mr: '7px' }} />
-                        <PersonOutlineOutlinedIcon sx={{ color: '#eeeeee', fontSize: '25px' }} />
+                        <HelpOutlineOutlinedIcon sx={{ color: '#eeeeee', fontSize: '25px', mr: '7px' ,cursor:'pointer'}} onClick={()=>{navigate('/')}}/>
+                        <InfoOutlinedIcon sx={{ color: '#eeeeee', fontSize: '25px', mr: '7px' ,cursor:'pointer'}} onClick={()=>{navigate('/about')}} />
+                        <PrivacyTipOutlinedIcon sx={{ color: '#eeeeee', fontSize: '25px',cursor:'pointer' }} onClick={()=>{navigate('/contact')}} />
 
                     </Grid>
                     <Grid item xs={3} sx={{ display: { lg: 'none', md: 'none', sm: 'flex', xs: 'flex' }, justifyContent: 'right', alignItems: 'center', p: '0px 15px' }}>
