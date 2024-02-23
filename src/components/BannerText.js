@@ -2,7 +2,7 @@ import { Grid, Typography } from '@mui/material';
 import angular from '../assets/angular2.png';
 import flutter from '../assets/flutter2.png';
 import node from '../assets/node.png';
-import python from '../assets/python.png';
+import pythonlogo from '../assets/pythonlogo.svg';
 import word from '../assets/word.png';
 import { MAIN_COLOR } from '../constant';
 import ProposalInput from '../global/ProposalInput';
@@ -32,7 +32,7 @@ const BannerText = () => {
                     <img width={'100%'} height={'100%'} style={{ borderRadius: '20px' }} src={flutter} alt="pic" />
                 </Grid>
                 <Grid item xs={1.6} lg={1} md={1} sm={1}>
-                    <img width={'100%'} height={'100%'} style={{ borderRadius: '20px' }} src={python} alt="pic" />
+                    <img width={'100%'} height={'100%'} style={{ borderRadius: '20px' }} src={pythonlogo} alt="pic" />
                 </Grid>
                 <Grid item xs={1.6} lg={1} md={1} sm={1}>
                     <img width={'100%'} height={'100%'} style={{ borderRadius: '20px' }} src={node} alt="pic" />
