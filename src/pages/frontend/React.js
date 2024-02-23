@@ -1,5 +1,5 @@
 import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Container, Grid, OutlinedInput, Paper, Typography } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import TopBanner from '../../assets/TopBanner.jpg'
 import react from '../../assets/reactjs.png'
 import web from '../../assets/web-design.jpg'
@@ -13,16 +13,21 @@ import background8 from '../../assets/background-8.png'
 import Diversity1Icon from '@mui/icons-material/Diversity1';
 import vector from '../../assets/vacter_right.png'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
-import { MAIN_COLOR } from '../../constant'
-import useBottomBar from '../../utils/useBottomBar'
-import BottomNavBar from '../../global/BottomNavBar'
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import { MAIN_COLOR } from '../../constant';
+import useBottomBar from '../../utils/useBottomBar';
+import BottomNavBar from '../../global/BottomNavBar';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 const ReactFrontend = () => {
     const { state } = useBottomBar()
+    useEffect(() => {
+        AOS.init({ duration: 2000 })
+    }, [])
     return (
         <>
             <Header />
@@ -116,7 +121,7 @@ const ReactFrontend = () => {
                 <Grid container sx={{ p: "20px" }}>
                     <Grid item xs={0} sm={1} md={1.5} lg={1}></Grid>
                     <Grid item xs={12} md={5} lg={6}>
-                        <Typography sx={{ fontSize: "35px", fontWeight: "800", color: MAIN_COLOR }} >
+                        <Typography sx={{  fontSize: {lg:"35px",md:'33px',sm:'30px',xs:'28px'}, fontWeight: "800", color: MAIN_COLOR }} >
                             Hire ReactJS developer rather than building an in-house team
                         </Typography>
                         <Typography paragraph sx={{ mt: "10px", fontSize: "14px" }}>
@@ -137,17 +142,17 @@ const ReactFrontend = () => {
                     <Grid item xs={0} sm={1} md={1.5} lg={1}></Grid>
                     <Grid item xs={12} md={5} lg={5} sx={{ mt: "15px", display: "flex", justifyContent: "center" }}>
                         <Box sx={{ lineHeight: "2.5" }}>
-                            <Typography sx={{ fontSize: "33px", fontWeight: "800", color: "white" }}>
+                            <Typography sx={{ fontSize: {lg:"33px",md:'30px',sm:'28px',xs:'27px'}, fontWeight: "800", color: "white" }}>
                                 Our Core Strength
                             </Typography>
-                            <Typography sx={{ mt: "10px", fontSize: "20px", color: "white", fontWeight: "500" }}>
+                            <Typography sx={{ mt: "10px", fontSize:{lg: "20px",md:'19px',sm:'18px',xs:'17px'}, color: "white", fontWeight: "500" }}>
                                 Our tech-driven ReactJS development team consist of :
                             </Typography>
                             <ul>
-                                <li style={{ color: "white", fontSize: "17px" }}>Skilled professionals with extensive knowledge and cross-domain experience.</li>
-                                <li style={{ color: "white", fontSize: "17px" }}>Successful track record with hundreds of ReactJS applications.</li>
-                                <li style={{ color: "white", fontSize: "17px" }}>Varied engagement models to provide hourly, part-time, and full-time options.</li>
-                                <li style={{ color: "white", fontSize: "17px" }}>Committed to deliver quality solutions within expected time frame.</li>
+                                <li style={{ color: "white", fontSize:{lg: "17px",md:'16px',sm:'15px',xs:'15px'} }}>Skilled professionals with extensive knowledge and cross-domain experience.</li>
+                                <li style={{ color: "white", fontSize: {lg: "17px",md:'16px',sm:'15px',xs:'15px'}}}>Successful track record with hundreds of ReactJS applications.</li>
+                                <li style={{ color: "white", fontSize: {lg: "17px",md:'16px',sm:'15px',xs:'15px'} }}>Varied engagement models to provide hourly, part-time, and full-time options.</li>
+                                <li style={{ color: "white", fontSize: {lg: "17px",md:'16px',sm:'15px',xs:'15px'} }}>Committed to deliver quality solutions within expected time frame.</li>
 
                             </ul>
                             <Button variant='contained' sx={{ mt: "10px", bgcolor: MAIN_COLOR, height: "50px", borderRadius: "25px", fontWeight: "800", p: '10px 30px' }}>
@@ -155,19 +160,19 @@ const ReactFrontend = () => {
                             </Button>
                         </Box>
                     </Grid>
-                    <Grid item xs={12} md={5} lg={4.4} sx={{ mt: "15px", display: "flex", justifyContent: "right", p: "15px" }}>
-                        <Box sx={{ height: "300px", width: "70%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={core} height="100%" width="100%" />
+                    <Grid item xs={12} sm={8} md={5} lg={4.4} sx={{ mt: "15px", display: "flex", justifyContent: "right", p: "15px", }}>
+                        <Box sx={{ height: {lg:"320px",md:'300px',sm:'300px',xs:'300px'}, width: "100%", borderRadius: "25px", overflow: "hidden" }}>
+                            <img src={core} height="100%" width="100%" style={{objectFit:'cover'}}/>
                         </Box>
                     </Grid>
                 </Grid>
                 <Grid container sx={{ mt: '20px' }}>
                     <Grid xs={12} item sx={{ display: "flex", justifyContent: "center" }}>
-                        <Box sx={{ width: "60%" }}>
-                            <Typography align='center' sx={{ fontSize: "35px", fontWeight: "800", color: MAIN_COLOR }} >
+                        <Box sx={{ width: "90%" }}>
+                            <Typography sx={{ fontSize: {lg:"35px",md:'33px',sm:'30px',xs:'28px'}, fontWeight: "800", color: MAIN_COLOR,textAlign:{lg:'center',md:'center',sm:'center',xs:'left'} }} >
                                 Our Key Differentiators
                             </Typography>
-                            <Typography align='center' sx={{ fontSize: "20px", fontWeight: "400", fontFamily: "Tisa Sans Pro sans-serif !important" }}>
+                            <Typography  sx={{ fontSize: { lg: "18px", md: '18px', sm: '16px', xs: '16px' }, fontWeight: "400", fontFamily: "Tisa Sans Pro sans-serif !important",textAlign:{lg:'center',md:'center',sm:'center',xs:'left'} }}>
                                 We are a leading ReactJS development company in India that caters services for small to large business enterprises. What makes us stand apart is our competence, commitment, expertise, and experience.
                             </Typography>
                         </Box>
@@ -177,10 +182,10 @@ const ReactFrontend = () => {
                             {
                                 [1, 1, 1, 1, 1, 1].map(() => {
                                     return (
-                                        <Grid item xs={12} sm={6} md={4} sx={{ mt: "30px" }}>
-                                            <Paper sx={{ borderRadius: "35px 10px 35px 10px", p: "15px" }} elevation={3}>
+                                        <Grid item xs={12} sm={6} md={4} sx={{ mt: "30px" }} >
+                                            <Paper sx={{ borderRadius: "35px 10px 35px 10px", p: "10px" }} elevation={3}>
                                                 <Box sx={{ bgcolor: "#f4f4f4", p: "13px", borderRadius: "100%", width: "fit-content", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                                    <ImportantDevicesIcon sx={{ fontSize: "45px" }} />
+                                                    <ImportantDevicesIcon sx={{ fontSize: "35px" }} />
                                                 </Box>
                                                 <Typography sx={{ fontSize: "23px", fontWeight: "800", color: MAIN_COLOR }} >
                                                     Comprehensive skillset
@@ -197,22 +202,78 @@ const ReactFrontend = () => {
                         </Grid>
                     </Box>
                 </Grid>
-                <Grid container spacing={2} sx={{ bgcolor: "black", p: "20px", mt: "20px", overflow: "hidden" }}>
+
+                <Grid container  sx={{ bgcolor: "black", p: "20px", mt: "20px", overflow: "hidden",}}>
                     <Grid xs={12} item sx={{ display: "flex", justifyContent: "center" }}>
                         <Box sx={{ width: { xs: "100%", sm: "100%", md: "70%", lg: "60%" } }}>
-                            <Typography align='center' sx={{ fontSize: { lg: '33px', md: '30px', sm: '30px', xs: '22px' }, fontWeight: "800", color: MAIN_COLOR }} >
+                            <Typography  sx={{ fontSize: { lg: '33px', md: '32px', sm: '30px', xs: '29px' }, fontWeight: "800", color: MAIN_COLOR,textAlign:{lg:'center',md:'center',sm:'center',xs:'left'} }} >
                                 Our Hiring Models
                             </Typography>
-                            <Typography align='center' sx={{ color: "white", fontSize: { lg: "18px", xs: '16px' }, fontWeight: "400", fontFamily: "Tisa Sans Pro sans-serif !important" }}>
+                            <Typography sx={{ color: "white", fontSize: { lg: "18px", xs: '16px' }, fontWeight: "400", fontFamily: "Tisa Sans Pro sans-serif !important" ,textAlign:{lg:'center',md:'center',sm:'center',xs:'left'}}}>
                                 Explore the engagement models we offer to hire Angular JS developer for your project         </Typography>
                         </Box>
                     </Grid>
+                    <Grid container sx={{ justifyContent: 'center', alignItems: 'center', }}>
+                        <Grid item  lg={8} md={8} sm={8} xs={11} >
+                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
+                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '23px' }, fontWeight: "800", color: "white" }}>
+                                            Hourly-Basis
+                                        </Typography>
+                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
+                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
+                                        </Typography>
+
+                                    </Box>
+                                </Grid>
+
+                                <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, }}>
+                                    <Box sx={{ height: "270px", borderRadius: "25px", overflow: "hidden" }}>
+                                        <img src={hiring} height="100%" width="100%" style={{objectFit:'cover'}}/>
+                                    </Box>
+                                </Grid>
+                            </Grid>
+
+
+                        </Grid>
+
+                    </Grid>
+
                     <Grid container sx={{ justifyContent: 'center', alignItems: 'center' }}>
-                        <Grid item xs={8} sx={{ height: '300px',  }}>
-                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                        <Grid item lg={8} md={8} sm={8} xs={11} >
+                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center',flexWrap:'wrap-reverse' }}>
+                                <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, display: "flex", }}>
+                                    <Box sx={{ height: "270px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
+                                        <img src={hiring2} height="100%" width="100%" style={{objectFit:'cover'}}/>
+                                    </Box>
+                                </Grid>
                                 <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                                     <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
                                         <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '22px' }, fontWeight: "800", color: "white" }}>
+                                            Hourly-Basis
+                                        </Typography>
+                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
+                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
+                                        </Typography>
+
+                                    </Box>
+                                </Grid>
+
+                            </Grid>
+
+
+                        </Grid>
+
+
+                    </Grid>
+
+                    <Grid container sx={{ justifyContent: 'center', alignItems: 'center' }}>
+                        <Grid item lg={8} md={8} sm={8} xs={11} >
+                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
+                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '23px' }, fontWeight: "800", color: "white" }}>
                                             Hourly-Basis
                                         </Typography>
                                         <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
@@ -223,68 +284,7 @@ const ReactFrontend = () => {
                                 </Grid>
                                 <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, display: "flex", }}>
                                     <Box sx={{ height: "270px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                                        <img src={hiring} height="100%" width="100%" />
-                                    </Box>
-                                </Grid>
-                            </Grid>
-
-
-                        </Grid>
-
-                    </Grid>
-
-
-
-
-
-
-                    <Grid container sx={{justifyContent: 'center', alignItems: 'center' }}>
-                        <Grid item xs={8} sx={{ height: '300px',  }}>
-                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
-                            <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, display: "flex", }}>
-                                    <Box sx={{ height: "270px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                                        <img src={hiring2} height="100%" width="100%" />
-                                    </Box>
-                                </Grid>
-                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
-                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '22px' }, fontWeight: "800", color: "white" }}>
-                                            Hourly-Basis
-                                        </Typography>
-                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
-                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
-                                        </Typography>
-
-                                    </Box>
-                                </Grid>
-                                
-                            </Grid>
-
-
-                        </Grid>
-
-
-                    </Grid>
-                   
-                    
-
-                    <Grid container sx={{  justifyContent: 'center', alignItems: 'center' }}>
-                        <Grid item xs={8} sx={{ height: '300px', }}>
-                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
-                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
-                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '22px' }, fontWeight: "800", color: "white" }}>
-                                            Hourly-Basis
-                                        </Typography>
-                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
-                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
-                                        </Typography>
-
-                                    </Box>
-                                </Grid>
-                                <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, display: "flex", }}>
-                                    <Box sx={{ height: "270px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                                        <img src={hiring3} height="100%" width="100%" />
+                                        <img src={hiring3} height="100%" width="100%" style={{objectFit:'cover'}}/>
                                     </Box>
                                 </Grid>
                             </Grid>
@@ -295,13 +295,14 @@ const ReactFrontend = () => {
                     </Grid>
 
                 </Grid>
+
                 <Grid container>
-                    <Grid xs={12} item sx={{ display: "flex", justifyContent: "center" }}>
-                        <Box sx={{ width: "60%" }}>
-                            <Typography align='center' sx={{ fontSize: "35px", fontWeight: "800", color: MAIN_COLOR }} >
+                    <Grid xs={12} item sx={{ display: "flex", justifyContent: "center", mt:'20px' }}>
+                        <Box sx={{ width: "90%" }}>
+                            <Typography  sx={{ fontSize: {lg:"35px",md:'33px',sm:'30px',xs:'28px'}, fontWeight: "800", color: MAIN_COLOR,textAlign:{lg:'center',md:'center',sm:'center',xs:'left'} }} >
                                 Our Hiring Process
                             </Typography>
-                            <Typography align='center' sx={{ fontSize: "20px", fontWeight: "400", fontFamily: "Tisa Sans Pro sans-serif !important" }}>
+                            <Typography  sx={{ fontSize:{lg: "20px",md:'19px',sm:'18px',xs:'16px'}, fontWeight: "400", fontFamily: "Tisa Sans Pro sans-serif !important",textAlign:{lg:'center',md:'center',sm:'center',xs:'left'} }}>
                                 Hire React Native Developer And/Or ReactJS Developer In A Few Simple Steps. Discover How Our Process Works.
                             </Typography>
                         </Box>
@@ -314,7 +315,7 @@ const ReactFrontend = () => {
                                         <Grid item xs={12} sm={6} md={6} sx={{ mt: "30px" }}>
                                             <Paper sx={{ borderRadius: "35px 10px 35px 10px", p: "15px" }} elevation={3}>
                                                 <Box sx={{ bgcolor: "#f4f4f4", p: "13px", borderRadius: "100%", width: "fit-content", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                                    <HubIcon sx={{ fontSize: "45px" }} />
+                                                    <HubIcon sx={{ fontSize: "35px" }} />
                                                 </Box>
                                                 <Typography sx={{ fontSize: "23px", fontWeight: "800", color: MAIN_COLOR }} >
                                                     Comprehensive skillset
@@ -387,9 +388,9 @@ const ReactFrontend = () => {
 
                 </Grid>
                 <Grid container sx={{ pb: "40px", display: "flex", justifyContent: "center" }}>
-                    <Box sx={{ width: { xs: "90%", sm: "90%", md: "67%", lg: "67%" } }}>
+                    <Box sx={{ width: { xs: "90%", sm: "90%", md: "67%", lg: "67%" },mt:'20px' }}>
                         <Box>
-                            <Typography sx={{ fontSize: "40px", fontWeight: "800", color: MAIN_COLOR }} >
+                            <Typography sx={{ fontSize: {lg:"40px", md:'37px',sm:'35px',xs:'30px'}, fontWeight: "800", color: MAIN_COLOR }} >
                                 Frequently Asked Questions
                             </Typography>
                         </Box>
@@ -401,7 +402,7 @@ const ReactFrontend = () => {
                                     id="panel1a-header"
                                     sx={{ p: "0px" }}
                                 >
-                                    <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                    <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                         How can I hire a ReactJS developer?
                                     </Typography>
                                 </AccordionSummary>
@@ -427,7 +428,7 @@ const ReactFrontend = () => {
                                     id="panel2a-header"
                                     sx={{ p: "0px" }}
                                 >
-                                    <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                    <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                         What if I’m not satisfied with your React solution?
                                     </Typography>
                                 </AccordionSummary>
@@ -448,7 +449,7 @@ const ReactFrontend = () => {
                                     id="panel3a-header"
                                     sx={{ p: "0px" }}
                                 >
-                                    <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                    <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                         How can I receive updates on my project?
                                     </Typography>
                                 </AccordionSummary>

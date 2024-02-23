@@ -373,7 +373,7 @@ const Meginto = () => {
 
                     <Box sx={{ display: "flex", alignItems: "center", flexWrap: "wrap" }}>
                         <Box data-aos='fade-up' sx={{ mt: "20px", height: { xs: "300px", sm: "300px", md: "380px", lg: "420px" } }}>
-                            <img src={orangenet} style={{ borderRadius: '90px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', }} alt='pic' height="100%" width="100%" />
+                            <img src={orangenet} style={{ borderRadius: '20px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', }} alt='pic' height="100%" width="100%" />
                         </Box>
                         <Box sx={{ml:'30px'}}>
                             {
@@ -394,90 +394,90 @@ const Meginto = () => {
             
 
             <Grid className='dotnetPage' item xs={12} sx={{ pb: "40px", display: "flex", justifyContent: "center", mt: '0px', pt: '30px' }}>
-                <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" } }}>
-                    <Typography sx={{ fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, fontWeight: "800", color: MAIN_COLOR }} >
-                        Megento Technologies We Use
-                    </Typography>
-                    <Typography sx={{ fontSize: { xs: '12px', lg: '16px'},color: 'white'  }}>Our Megento developers have an iron grip of core and advanced Megento technologies to facilitate the agile development of quality-oriented web apps for your business. Some of the cutting-edge Megento technologies and tools we work on include:</Typography>
-
-                    <Box>
-                        <Typography sx={{ fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, color: MAIN_COLOR, m: "30px 0px" }} >
-                            Megento Technologies
+                    <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" } }}>
+                        <Typography sx={{ fontSize: { lg: "33px", md: "30px", sm: "28px", xs: "22px" }, fontWeight: "800", color: MAIN_COLOR }} >
+                            Megento Technologies We Use
                         </Typography>
-                        <Grid container spacing={2}>
-                            {
-                                Technologies1.map((ele) => {
-                                    return (
-                                        <Grid item xs={12} sm={6} md={4} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'0px 10px 10px 0px ' }}>
-                                            <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0", height: "75px", borderRadius: "18px" }} elevation={7}>
-                                                <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
-                                                    <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
-                                                </Typography>
-                                            </Paper>
-                                        </Grid>
-                                    )
-                                })
-                            }
+                        <Typography sx={{ fontSize: { xs: '12px', lg: '16px' }, color: 'white' }}>Our Php developers have an iron grip of core and advanced Php technologies to facilitate the agile development of quality-oriented web apps for your business. Some of the cutting-edge Php technologies and tools we work on include:</Typography>
 
-                        </Grid> 
+                        <Box>
+                            <Typography sx={{ fontSize: { lg: "33px", md: "30px", sm: "28px", xs: "22px" }, color: MAIN_COLOR, m: "30px 0px" }} >
+                                Php Technologies
+                            </Typography>
+                            <Grid container >
+                                {
+                                    Technologies1.map((ele) => {
+                                        return (
+                                            <Grid item xs={12} sm={6} md={4} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', p: '10px ' }}>
+                                                <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0", height: "75px", borderRadius: "18px" }} elevation={7}>
+                                                    <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
+                                                        <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
+                                                    </Typography>
+                                                </Paper>
+                                            </Grid>
+                                        )
+                                    })
+                                }
+
+                            </Grid>
+                        </Box>
+
                     </Box>
 
-                </Box>
+                </Grid>
 
-            </Grid>
+                <Grid className='dotnetPage' item xs={12} sx={{ pb: "15px", display: 'flex', justifyContent: 'center' }}>
+                    <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, }}>
+                        <Box>
+                            <Typography sx={{ fontSize: { lg: "33px", md: "30px", sm: "28px", xs: "22px" }, m: '30px 0px', fontWeight: "900", color: MAIN_COLOR }} >
+                                Application Testing Tools
+                            </Typography>
+                            <Grid container  >
+                                {
+                                    Technologies2.map((ele) => {
+                                        return (
+                                            <Grid item xs={12} sm={6} md={6} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', p: '10px' }}>
+                                                <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0", height: "75px", borderRadius: "18px", }} elevation={2}>
+                                                    <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
+                                                        <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
+                                                    </Typography>
+                                                </Paper>
+                                            </Grid>
+                                        )
+                                    })
+                                }
 
-            <Grid className='dotnetPage' item xs={12} sx={{ pb: "15px",display:'flex', justifyContent:'center'  }}>
-                <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, }}>
-                    <Box>
-                        <Typography sx={{fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, m: '30px 0px', fontWeight: "900", color: MAIN_COLOR }} >
-                            Application Testing Tools
-                        </Typography>
-                        <Grid container spacing={2} >
-                            {
-                                Technologies2.map((ele) => {
-                                    return (
-                                        <Grid item xs={12} sm={6} md={6} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'0px 14px 15px 0px'  }}>
-                                        <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0",  height: "75px", borderRadius: "18px" , }} elevation={2}>
-                                            <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
-                                                <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
-                                            </Typography>
-                                        </Paper>
-                                    </Grid>
-                                    )
-                                })
-                            }
+                            </Grid>
+                        </Box>
 
-                        </Grid>
                     </Box>
-
-                </Box>
-            </Grid>
+                </Grid>
 
 
-            <Grid className='dotnetPage' item xs={12} sx={{ pb: "15px", display: "flex", justifyContent: "center" }}>
-                <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, }}>
-                    <Box>
-                        <Typography sx={{ fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, m: '30px 0px', fontWeight: "800", color: MAIN_COLOR }} >
-                            Payment Gateway Integrations
-                        </Typography>
-                        <Grid container spacing={2}>
-                            {
-                                Technologies3.map((ele) => {
-                                    return (
-                                        <Grid item xs={12} sm={6} md={4} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'0px 10px 10px 0px' }}>
-                                            <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0", p: "10px", height: "75px", borderRadius: "18px" }} elevation={2}>
-                                                <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
-                                                    <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
-                                                </Typography>
-                                            </Paper>
-                                        </Grid>
-                                    )
-                                })
-                            }
-                        </Grid>
+                <Grid className='dotnetPage' item xs={12} sx={{ pb: "15px", display: "flex", justifyContent: "center" }}>
+                    <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, }}>
+                        <Box>
+                            <Typography sx={{ fontSize: { lg: "33px", md: "30px", sm: "28px", xs: "22px" }, m: '30px 0px', fontWeight: "800", color: MAIN_COLOR }} >
+                                Payment Gateway Integrations
+                            </Typography>
+                            <Grid container >
+                                {
+                                    Technologies3.map((ele) => {
+                                        return (
+                                            <Grid item xs={12} sm={6} md={4} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', p: '10px' }}>
+                                                <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0", p: "10px", height: "75px", borderRadius: "18px" }} elevation={2}>
+                                                    <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
+                                                        <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
+                                                    </Typography>
+                                                </Paper>
+                                            </Grid>
+                                        )
+                                    })
+                                }
+                            </Grid>
+                        </Box>
                     </Box>
-                </Box>
-            </Grid>
+                </Grid>
 
             <Grid item xs={12} sx={{ pb: "15px" }}>
                 <Box sx={{ display: "flex", justifyContent: "center", mb: '80px' }}>
@@ -491,7 +491,7 @@ const Meginto = () => {
                     </Box>
                 </Box>
                 <Box sx={{ display: "flex", justifyContent: "center", mt: "20px" }}>
-                    <Grid container sx={{ width: { xs: "99%", sm: "99%", md: "70%", lg: "80%" }, display:'flex', justifyContent:'space-between', alignItems:'center', bgcolor:'black', borderRadius:'10px'}} >
+                    <Grid container sx={{ width: { xs: "99%", sm: "99%", md: "70%", lg: "80%" }, display:'flex', justifyContent:'space-between', alignItems:'center', borderRadius:'10px'}} >
                         {
                             AllBuisness.map((ele) => {
                                 return (
@@ -630,7 +630,7 @@ const Meginto = () => {
 
 
                     <Box>
-                        <Typography sx={{ fontSize: "40px", fontWeight: "800", color: MAIN_COLOR }} >
+                        <Typography sx={{ fontSize: {lg:"40px", md:'37px',sm:'35px',xs:'30px'}, fontWeight: "800", color: MAIN_COLOR }} >
                             Frequently Asked Questions
                         </Typography>
                     </Box>
@@ -642,7 +642,7 @@ const Meginto = () => {
                                 id="panel1a-header"
                                 sx={{ p: "0px" }}
                             >
-                                <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                     How do you protect my app idea or business details?
                                 </Typography>
                             </AccordionSummary>
@@ -664,7 +664,7 @@ const Meginto = () => {
                                 id="panel2a-header"
                                 sx={{ p: "0px" }}
                             >
-                                <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                     What if I’m not satisfied with your Megento solution?
                                 </Typography>
                             </AccordionSummary>
@@ -685,7 +685,7 @@ const Meginto = () => {
                                 id="panel3a-header"
                                 sx={{ p: "0px" }}
                             >
-                                <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                     How can I receive updates on my project?
                                 </Typography>
                             </AccordionSummary>
@@ -706,7 +706,7 @@ const Meginto = () => {
                                 id="panel3a-header"
                                 sx={{ p: "0px" }}
                             >
-                                <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                     How much does it cost to develop a Megento project?
                                 </Typography>
                             </AccordionSummary>
@@ -726,7 +726,7 @@ const Meginto = () => {
                                 id="panel3a-header"
                                 sx={{ p: "0px" }}
                             >
-                                <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                     How do I find the best Megento development company?
                                 </Typography>
                             </AccordionSummary>
@@ -746,7 +746,7 @@ const Meginto = () => {
                                 id="panel3a-header"
                                 sx={{ p: "0px" }}
                             >
-                                <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                     What are types of software can I develop using Megento?
                                 </Typography>
                             </AccordionSummary>
@@ -766,7 +766,7 @@ const Meginto = () => {
                                 id="panel3a-header"
                                 sx={{ p: "0px" }}
                             >
-                                <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                     How do you charge for hiring a Megento developer
                                 </Typography>
                             </AccordionSummary>

@@ -143,43 +143,63 @@ const Php = () => {
     ]
 
     const netInfo2 = [{
-        icon: <PeopleOutlineIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <PeopleOutlineIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Team Selection",
         about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <PsychologyIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <PsychologyIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Interview",
         about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <BackupTableIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <BackupTableIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Agreement",
         about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <DescriptionIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <DescriptionIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Project Kick-off",
         about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },]
 
     const netInfo3 = [{
-        icon: <PeopleOutlineIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <PeopleOutlineIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Team Selection",
         about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <PsychologyIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <PsychologyIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Interview",
         about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <BackupTableIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <BackupTableIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Agreement",
         about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <DescriptionIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <DescriptionIcon sx={{ color: "black", fontSize: "40px" }} />,
+        title: "Project Kick-off",
+        about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
+    },
+    {
+        icon: <PeopleOutlineIcon sx={{ color: "black", fontSize: "40px" }} />,
+        title: "Team Selection",
+        about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
+    },
+    {
+        icon: <PsychologyIcon sx={{ color: "black", fontSize: "40px" }} />,
+        title: "Interview",
+        about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
+    },
+    {
+        icon: <BackupTableIcon sx={{ color: "black", fontSize: "40px" }} />,
+        title: "Agreement",
+        about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
+    },
+    {
+        icon: <DescriptionIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Project Kick-off",
         about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
@@ -189,37 +209,17 @@ const Php = () => {
         about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <PsychologyIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <PsychologyIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Interview",
         about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <BackupTableIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <BackupTableIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Agreement",
         about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <DescriptionIcon sx={{ color: "black", fontSize: "50px" }} />,
-        title: "Project Kick-off",
-        about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
-    },
-    {
-        icon: <PeopleOutlineIcon sx={{ color: "black", fontSize: "50px" }} />,
-        title: "Team Selection",
-        about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
-    },
-    {
-        icon: <PsychologyIcon sx={{ color: "black", fontSize: "50px" }} />,
-        title: "Interview",
-        about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
-    },
-    {
-        icon: <BackupTableIcon sx={{ color: "black", fontSize: "50px" }} />,
-        title: "Agreement",
-        about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
-    },
-    {
-        icon: <DescriptionIcon sx={{ color: "black", fontSize: "50px" }} />,
+        icon: <DescriptionIcon sx={{ color: "black", fontSize: "40px" }} />,
         title: "Project Kick-off",
         about: "Our dedicated Php developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
@@ -374,7 +374,7 @@ const Php = () => {
 
                         <Box sx={{ display: "flex", alignItems: "center", flexWrap: "wrap" }}>
                             <Box data-aos='fade-up' sx={{ mt: "20px", height: { xs: "300px", sm: "300px", md: "320px", lg: "400px" } }}>
-                                <img src={orangenet} style={{ borderRadius: '90px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', }} alt='pic' height="100%" width="100%" />
+                                <img src={orangenet} style={{ borderRadius: '20px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', }} alt='pic' height="100%" width="100%" />
                             </Box>
                             <Box sx={{ ml: '30px' }}>
                                 {
@@ -595,7 +595,8 @@ const Php = () => {
                     </Box>
                 </Grid>
 
-                <Grid item xs={12} sx={{ bgcolor: "#002F96" }}>
+                <Grid container sx={{display:'flex',justifyContent:'center',alignItems:'flex-start',bgcolor: "#002F96"}}>
+                <Grid item xs={10} >
                     <Box sx={{ display: "flex", justifyContent: "center" }}>
                         <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, mt: "50px" }}>
                             <Typography sx={{ fontSize: { lg: "33px", md: "30px", sm: "28px", xs: "22px" }, fontWeight: "800", color: "white" }} >
@@ -610,7 +611,7 @@ const Php = () => {
                                     return (
 
                                         <Grid item xs={12} sm={12} md={6} lg={3} sx={{ p: "15px 10px 15px 10px", lineHeight: "2" }}>
-                                            <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", bgcolor: "white", height: "100px", width: "100px", borderRadius: "100%" }}>
+                                            <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", bgcolor: "white", height: "80px", width: "80px", borderRadius: "100%" }}>
                                                 {ele.icon}
                                             </Box>
                                             <Typography sx={{ mt: "15px", color: "white", fontWeight: "800", wordSpacing: "2px", letterSpacing: "px" }}>{ele.title}</Typography>
@@ -623,6 +624,10 @@ const Php = () => {
                     </Box>
                 </Grid>
 
+                </Grid>
+
+         
+
 
                 <SendMessage />
                 <Grid item xs={12} sx={{ pb: "40px", display: "flex", justifyContent: "center" }}>
@@ -631,7 +636,7 @@ const Php = () => {
 
 
                         <Box>
-                            <Typography sx={{ fontSize: "40px", fontWeight: "800", color: MAIN_COLOR }} >
+                            <Typography sx={{ fontSize: {lg:"40px", md:'37px',sm:'35px',xs:'30px'}, fontWeight: "800", color: MAIN_COLOR }} >
                                 Frequently Asked Questions
                             </Typography>
                         </Box>
@@ -643,7 +648,7 @@ const Php = () => {
                                     id="panel1a-header"
                                     sx={{ p: "0px" }}
                                 >
-                                    <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                    <Typography sx={{ color: "black",fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                         How do you protect my app idea or business details?
                                     </Typography>
                                 </AccordionSummary>
@@ -665,7 +670,7 @@ const Php = () => {
                                     id="panel2a-header"
                                     sx={{ p: "0px" }}
                                 >
-                                    <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                    <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                         What if I’m not satisfied with your Php solution?
                                     </Typography>
                                 </AccordionSummary>
@@ -686,7 +691,7 @@ const Php = () => {
                                     id="panel3a-header"
                                     sx={{ p: "0px" }}
                                 >
-                                    <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                    <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                         How can I receive updates on my project?
                                     </Typography>
                                 </AccordionSummary>
@@ -707,7 +712,7 @@ const Php = () => {
                                     id="panel3a-header"
                                     sx={{ p: "0px" }}
                                 >
-                                    <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                    <Typography sx={{ color: "black",fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                         How much does it cost to develop a Php project?
                                     </Typography>
                                 </AccordionSummary>
@@ -727,7 +732,7 @@ const Php = () => {
                                     id="panel3a-header"
                                     sx={{ p: "0px" }}
                                 >
-                                    <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                    <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                         How do I find the best Php development company?
                                     </Typography>
                                 </AccordionSummary>
@@ -747,7 +752,7 @@ const Php = () => {
                                     id="panel3a-header"
                                     sx={{ p: "0px" }}
                                 >
-                                    <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                    <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                         What are types of software can I develop using Php?
                                     </Typography>
                                 </AccordionSummary>
@@ -767,7 +772,7 @@ const Php = () => {
                                     id="panel3a-header"
                                     sx={{ p: "0px" }}
                                 >
-                                    <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                    <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                         How do you charge for hiring a Php developer
                                     </Typography>
                                 </AccordionSummary>

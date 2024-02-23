@@ -28,6 +28,12 @@ const Portfolio = () => {
     const openDrawerHandler = () => {
         setOpen(true)
     };
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    },[])
    
 
     const navigate = useNavigate()

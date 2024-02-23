@@ -197,22 +197,77 @@ const NodeFrontend = () => {
                         </Grid>
                     </Box>
                 </Grid>
-                <Grid container spacing={2} sx={{ bgcolor: "black", p: "20px", mt: "20px", overflow: "hidden" }}>
+                <Grid container  sx={{ bgcolor: "black", p: "20px", mt: "20px", overflow: "hidden",}}>
                     <Grid xs={12} item sx={{ display: "flex", justifyContent: "center" }}>
                         <Box sx={{ width: { xs: "100%", sm: "100%", md: "70%", lg: "60%" } }}>
-                            <Typography align='center' sx={{ fontSize: { lg: '33px', md: '30px', sm: '30px', xs: '22px' }, fontWeight: "800", color: MAIN_COLOR }} >
+                            <Typography  sx={{ fontSize: { lg: '33px', md: '30px', sm: '30px', xs: '22px' }, fontWeight: "800", color: MAIN_COLOR,textAlign:{lg:'center',md:'center',sm:'center',xs:'left'} }} >
                                 Our Hiring Models
                             </Typography>
-                            <Typography align='center' sx={{ color: "white", fontSize: { lg: "18px", xs: '16px' }, fontWeight: "400", fontFamily: "Tisa Sans Pro sans-serif !important" }}>
+                            <Typography sx={{ color: "white", fontSize: { lg: "18px", md: '18px', sm: '16px', xs: '16px' }, fontWeight: "400", fontFamily: "Tisa Sans Pro sans-serif !important" ,textAlign:{lg:'center',md:'center',sm:'center',xs:'left'}}}>
                                 Explore the engagement models we offer to hire Angular JS developer for your project         </Typography>
                         </Box>
                     </Grid>
+                    <Grid container sx={{ justifyContent: 'center', alignItems: 'center', }}>
+                        <Grid item  lg={8} md={8} sm={8} xs={11} >
+                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
+                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '22px' }, fontWeight: "800", color: "white" }}>
+                                            Hourly-Basis
+                                        </Typography>
+                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
+                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
+                                        </Typography>
+
+                                    </Box>
+                                </Grid>
+
+                                <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, }}>
+                                    <Box sx={{ height: "270px", borderRadius: "25px", overflow: "hidden" }}>
+                                        <img src={hiring} height="100%" width="100%" style={{objectFit:'cover'}}/>
+                                    </Box>
+                                </Grid>
+                            </Grid>
+
+
+                        </Grid>
+
+                    </Grid>
+
                     <Grid container sx={{ justifyContent: 'center', alignItems: 'center' }}>
-                        <Grid item xs={8} sx={{ height: '300px',  }}>
-                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                        <Grid item lg={8} md={8} sm={8} xs={11} >
+                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center',flexWrap:'wrap-reverse' }}>
+                                <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, display: "flex", }}>
+                                    <Box sx={{ height: "270px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
+                                        <img src={hiring2} height="100%" width="100%" style={{objectFit:'cover'}}/>
+                                    </Box>
+                                </Grid>
                                 <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                                     <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
                                         <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '22px' }, fontWeight: "800", color: "white" }}>
+                                            Hourly-Basis
+                                        </Typography>
+                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
+                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
+                                        </Typography>
+
+                                    </Box>
+                                </Grid>
+
+                            </Grid>
+
+
+                        </Grid>
+
+
+                    </Grid>
+
+                    <Grid container sx={{ justifyContent: 'center', alignItems: 'center' }}>
+                        <Grid item lg={8} md={8} sm={8} xs={11} >
+                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
+                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '23px' }, fontWeight: "800", color: "white" }}>
                                             Hourly-Basis
                                         </Typography>
                                         <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
@@ -223,68 +278,7 @@ const NodeFrontend = () => {
                                 </Grid>
                                 <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, display: "flex", }}>
                                     <Box sx={{ height: "270px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                                        <img src={hiring} height="100%" width="100%" />
-                                    </Box>
-                                </Grid>
-                            </Grid>
-
-
-                        </Grid>
-
-                    </Grid>
-
-
-
-
-
-
-                    <Grid container sx={{justifyContent: 'center', alignItems: 'center' }}>
-                        <Grid item xs={8} sx={{ height: '300px',  }}>
-                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
-                            <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, display: "flex", }}>
-                                    <Box sx={{ height: "270px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                                        <img src={hiring2} height="100%" width="100%" />
-                                    </Box>
-                                </Grid>
-                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
-                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '22px' }, fontWeight: "800", color: "white" }}>
-                                            Hourly-Basis
-                                        </Typography>
-                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
-                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
-                                        </Typography>
-
-                                    </Box>
-                                </Grid>
-                                
-                            </Grid>
-
-
-                        </Grid>
-
-
-                    </Grid>
-                   
-                    
-
-                    <Grid container sx={{  justifyContent: 'center', alignItems: 'center' }}>
-                        <Grid item xs={8} sx={{ height: '300px', }}>
-                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
-                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
-                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '22px' }, fontWeight: "800", color: "white" }}>
-                                            Hourly-Basis
-                                        </Typography>
-                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
-                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
-                                        </Typography>
-
-                                    </Box>
-                                </Grid>
-                                <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, display: "flex", }}>
-                                    <Box sx={{ height: "270px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                                        <img src={hiring3} height="100%" width="100%" />
+                                        <img src={hiring3} height="100%" width="100%" style={{objectFit:'cover'}}/>
                                     </Box>
                                 </Grid>
                             </Grid>

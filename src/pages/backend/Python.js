@@ -374,7 +374,7 @@ const Python = () => {
 
                     <Box sx={{ display: "flex", alignItems: "center", flexWrap: "wrap" }}>
                         <Box data-aos='fade-up' sx={{ mt: "20px", height: { xs: "300px", sm: "300px", md: "320px", lg: "400px" } }}>
-                            <img src={orangenet} style={{ borderRadius: '90px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', }} alt='pic' height="100%" width="100%" />
+                            <img src={orangenet} style={{ borderRadius: '20px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', }} alt='pic' height="100%" width="100%" />
                         </Box>
                         <Box sx={{ml:'30px'}}>
                             {
@@ -626,12 +626,12 @@ const Python = () => {
 
             <SendMessage />
             <Grid item xs={12} sx={{ pb: "40px", display: "flex", justifyContent: "center" }}>
-                <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" } }}>
+                <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" },mt:'20px'  }}>
 
 
 
                     <Box>
-                        <Typography sx={{ fontSize: "40px", fontWeight: "800", color: MAIN_COLOR }} >
+                        <Typography sx={{fontSize: {lg:"40px", md:'37px',sm:'35px',xs:'30px'}, fontWeight: "800", color: MAIN_COLOR }} >
                             Frequently Asked Questions
                         </Typography>
                     </Box>
@@ -643,7 +643,7 @@ const Python = () => {
                                 id="panel1a-header"
                                 sx={{ p: "0px" }}
                             >
-                                <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                <Typography sx={{ color: "black",fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                     How do you protect my app idea or business details?
                                 </Typography>
                             </AccordionSummary>
@@ -665,7 +665,7 @@ const Python = () => {
                                 id="panel2a-header"
                                 sx={{ p: "0px" }}
                             >
-                                <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                     What if I’m not satisfied with your Python solution?
                                 </Typography>
                             </AccordionSummary>
@@ -686,7 +686,7 @@ const Python = () => {
                                 id="panel3a-header"
                                 sx={{ p: "0px" }}
                             >
-                                <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                     How can I receive updates on my project?
                                 </Typography>
                             </AccordionSummary>
@@ -707,7 +707,7 @@ const Python = () => {
                                 id="panel3a-header"
                                 sx={{ p: "0px" }}
                             >
-                                <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                     How much does it cost to develop a Python project?
                                 </Typography>
                             </AccordionSummary>
@@ -727,7 +727,7 @@ const Python = () => {
                                 id="panel3a-header"
                                 sx={{ p: "0px" }}
                             >
-                                <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                     How do I find the best Python development company?
                                 </Typography>
                             </AccordionSummary>
@@ -747,7 +747,7 @@ const Python = () => {
                                 id="panel3a-header"
                                 sx={{ p: "0px" }}
                             >
-                                <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                     What are types of software can I develop using Python?
                                 </Typography>
                             </AccordionSummary>
@@ -767,7 +767,7 @@ const Python = () => {
                                 id="panel3a-header"
                                 sx={{ p: "0px" }}
                             >
-                                <Typography sx={{ color: "black", fontSize: "18px", fontWeight: "800" }}>
+                                <Typography sx={{ color: "black", fontSize:{lg: "18px",md:'17px',sm:'17px',xs:'17px'}, fontWeight: "800" }}>
                                     How do you charge for hiring a Python developer
                                 </Typography>
                             </AccordionSummary>

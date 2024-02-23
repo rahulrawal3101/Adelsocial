@@ -5,10 +5,10 @@ import contactwall from '../assets/contactwall.jpg';
 import Typewriter from 'typewriter-effect';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import SendMessage from '../components/SendMessage';
 import { MAIN_COLOR, MOBILE } from '../constant';
 import useBottomBar from '../utils/useBottomBar';
 import BottomNavBar from '../global/BottomNavBar';
+import SendMessage from '../components/SendMessage';
 
 const ContactUs = () => {
     const { state } = useBottomBar()
@@ -94,12 +94,12 @@ const ContactUs = () => {
                     </Grid>
 
                     <Grid container sx={{ mt: { lg: '50px', md: '40px', sm: '30px', xs: '30px' }, display: 'flex', justifyContent: 'space-evenly', alignItems: 'flex-start', padding: '20px 18px' }}>
-                        <Grid item lg={5.44} md={6} sm={12} xs={12} sx={{ borderRadius: '10px', boxShadow: '1px 1px 10px 0px rgba(0,0,0,0.75)', height: '450px' }}>
+                        <Grid item lg={8} md={7} sm={12} xs={12} sx={{ borderRadius: '10px', boxShadow: '1px 1px 10px 0px rgba(0,0,0,0.75)', height: '450px' }}>
 
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0553500909477!2d77.21102887449014!3d28.538055988366565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1fceaa6e5387%3A0x37ebbd6c60001afc!2sAdelSocial!5e0!3m2!1sen!2sin!4v1689831157113!5m2!1sen!2sin" width="100%" height="100%" style={{ border: '0', allowfullscreen: "", loading: "lazy", referrerpolicy: "no-referrer-when-downgrade", borderRadius: '10px' }}></iframe>
 
                         </Grid>
-                        <Grid item lg={5} md={5} sm={12} xs={12} sx={{ mt: { lg: '0px', md: '0px', sm: '10px', xs: '15px' }, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <Grid item lg={4} md={5} sm={12} xs={12} sx={{ mt: { lg: '0px', md: '0px', sm: '10px', xs: '15px' }, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center' }}>
                             <Typography  sx={{ fontSize: { lg: '30px', md: '27px', sm: '25px', xs: '24px' }, color: '#01579b', fontWeight: '600' }}>Locate Us</Typography>
                             <Typography sx={{ fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' }, mt: '5px', textAlign: 'center' }}>P-27, Block P, <br />Shivalik Colony, Malviya Nagar,<br /> New Delhi, Delhi 110017, <br />info@adelsocial.com</Typography>
                             <Typography sx={{ display: 'flex', justifyContent: 'left', alignItems: 'center', fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' } }}><PhoneIphoneIcon fontSize='small' />{MOBILE}</Typography>
@@ -117,7 +117,8 @@ const ContactUs = () => {
 
                 </Container>
             </Grid>
-            <SendMessage />
+            <SendMessage/>
+            
             <Footer/>
         </>
 

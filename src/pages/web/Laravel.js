@@ -166,7 +166,7 @@ const LaravelPage = () => {
 
                     </Grid>
                 </Box>
-                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: "10px" }}>
+                {/* <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: "10px" }}>
                     <Grid container xs={4} sx={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
                         <Grid item data-aos='fade-right' xs={12} sm={12} md={5.5} sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }} >
                            <Box sx={{width:{lg:'180px', md:'160px', sm:'140px', xs:'120px'}, height:{lg:'85px', md:'80px', sm:'76px', xs:'70px'} }}>
@@ -184,9 +184,9 @@ const LaravelPage = () => {
 
                         </Grid>
                     </Grid>
-                </Box>
+                </Box> */}
 
-                <Box sx={{ display:{ lg:"flex", md:'flex', sm:'flex', xs:'none'}, justifyContent: "center", alignItems: "center", bgcolor: "black", p: "15px", m: '30px' }}>
+                {/* <Box sx={{ display:{ lg:"flex", md:'flex', sm:'flex', xs:'none'}, justifyContent: "center", alignItems: "center", bgcolor: "black", p: "15px", m: '30px' }}>
                     <Grid container xs={12}  >
                         <Grid item xs={2} sm={2} md={2} lg={2} data-aos='fade-up' sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                             <Box sx={{width:{lg:'170px', md:'130px', sm:'90px', xs:'70px'}, height:{lg:'60px', md:'50px', sm:'50px', xs:'40px'}}}>
@@ -227,11 +227,11 @@ const LaravelPage = () => {
                         </Box>
                         </Grid>
                     </Grid>
-                </Box>
-                <Grid container sx={{ p: { xs: "8px", sm: "8px", md: "8px", lg: "15px", m: '20px 0px' } , justifyContent:'space-evenly', alignItems:'center'}}>
+                </Box> */}
+                <Grid container sx={{ p: "20px" , justifyContent:'space-evenly', alignItems:'center'}} >
                 
                 <Grid item xs={12} md={5} lg={5} data-aos='fade-up'>
-                    <Typography sx={{ fontSize:{lg:'33px', md:'30px', sm:'30px', xs:'22px'}, fontWeight: "800", color: MAIN_COLOR }} >
+                    <Typography sx={{ fontSize: {lg:"35px",md:'33px',sm:'30px',xs:'28px'}, fontWeight: "800", color: MAIN_COLOR }} >
                         Hire Dedicated LaravelPage Developers with Flexibility
                     </Typography>
                     <Typography sx={{ mt: "10px", fontSize:{ lg:"16px", xs:'15px'}, mb: "15px" }}>
@@ -244,26 +244,27 @@ const LaravelPage = () => {
                 </Grid>
                 <Grid item xs={12} md={5} lg={5} sx={{display:'flex', justifyContent:'center', alignItems:'center', mt:{xs:'10px'}}}>
                    
-                    <Box  data-aos='fade-up' sx={{ height: "350px", width: { xs: "90%", sm: "85%", md: "80%", lg: "80%" }, borderRadius: "25px", overflow: "hidden",boxShadow: '0px 0px 5px 0px rgba(0,0,0,0.75)' }}>
-                            <img src={LaravelHire} height="100%" width="100%" alt='img3' />
+                    <Box  data-aos='fade-up' sx={{ height:{lg: "320px",md:'300px',sm:'300px',xs:'300px'}, width: { xs: "100%", sm: "85%", md: "80%", lg: "80%" }, borderRadius: "25px", overflow: "hidden",boxShadow: '0px 0px 5px 0px rgba(0,0,0,0.75)' }}>
+                            <img src={LaravelHire} height="100%" width="100%" alt='img3' style={{objectFit:'cover'}}/>
                         </Box>
                 </Grid>
             </Grid>
 
 
-            <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: { xs: "8px", sm: "8px", md: "8px", lg: "15px" } , bgcolor:'black' }}>
-                <Grid container xs={12} sm={12} md={10} lg={9}>
+            <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: { xs: "8px", sm: "8px", md: "8px", lg: "15px" } ,  }}>
+                <Grid container xs={11} sm={12} md={10} lg={9}>
                     <Grid xs={12} item sx={{ display: "flex", justifyContent: "center" }}>
                         <Box >
-                            <Typography align='center' sx={{ fontSize: {lg:'33px', md:'30px', sm:'30px', xs:'22px'}, fontWeight: "800", color: MAIN_COLOR }} >
+                            <Typography  sx={{ fontSize: {lg:"35px",md:'33px',sm:'30px',xs:'28px'}, fontWeight: "800", color: MAIN_COLOR,textAlign:{lg:'center',md:'center',sm:'center',xs:'left'} }} >
                                 End-To-End LaravelPage Development Services
                             </Typography>
-                            <Typography align='center' sx={{fontSize:{lg:'16px', md:'15px', sm:'13px', xs:'13px'}, color:'white',fontWeight: "400",  }}>
+                            <Typography  sx={{fontSize:{lg: "20px",md:'19px',sm:'18px',xs:'16px'}, color:'black',fontWeight: "400",textAlign:{lg:'center',md:'center',sm:'center',xs:'left'}  }}>
                                 When you hire LaravelPage developers from us, the scope of your digital world becomes virtually limitless. We offer an extensive range of design, development, and tech support services for all kinds of needs.
                             </Typography>
                         </Box>
                     </Grid>
-                    <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: "15px" }}>
+
+                    <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: "10px" }}>
                         <Grid container xs={12} spacing={3}>
                             {
                                 six.map(() => {
@@ -287,77 +288,96 @@ const LaravelPage = () => {
                 </Grid>
             </Box>
 
-            <Grid container spacing={2} sx={{ bgcolor: "#002F96", overflow:"hidden",p: "20px" }}>
+            <Grid container  sx={{ bgcolor: "black", p: "20px", mt: "20px", overflow: "hidden",}}>
                     <Grid xs={12} item sx={{ display: "flex", justifyContent: "center" }}>
                         <Box sx={{ width: { xs: "100%", sm: "100%", md: "70%", lg: "60%" } }}>
-                            <Typography align='center' sx={{ fontSize:{lg:'33px', md:'30px', sm:'30px', xs:'22px'}, fontWeight: "800", color: MAIN_COLOR }} >
+                            <Typography  sx={{ fontSize: { lg: '33px', md: '30px', sm: '30px', xs: '22px' }, fontWeight: "800", color: MAIN_COLOR,textAlign:{lg:'center',md:'center',sm:'center',xs:'left'} }} >
                                 Our Hiring Models
                             </Typography>
-                            <Typography align='center' sx={{ color: "white", fontSize: {lg:"16px", xs:'16px'}, fontWeight: "400", }}>
+                            <Typography sx={{ color: "white", fontSize: { lg: "18px", xs: '16px' }, fontWeight: "400", fontFamily: "Tisa Sans Pro sans-serif !important" ,textAlign:{lg:'center',md:'center',sm:'center',xs:'left'}}}>
                                 Explore the engagement models we offer to hire Angular JS developer for your project         </Typography>
                         </Box>
                     </Grid>
+                    <Grid container sx={{ justifyContent: 'center', alignItems: 'center', }}>
+                        <Grid item  lg={8} md={8} sm={8} xs={11} >
+                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
+                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '22px' }, fontWeight: "800", color: "white" }}>
+                                            Hourly-Basis
+                                        </Typography>
+                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
+                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
+                                        </Typography>
 
-                    <Grid item xs={0} sm={1} md={1.5} lg={2}></Grid>
-                    <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <Box sx={{ lineHeight: "2.5", height: "70%", pt: {lg:"20px", md:'20px', sx:'10px', xs:'0px'} }}>
-                            <Typography sx={{ fontSize: {lg:"25px", md:'24px', sm:'23px', xs:'22px'}, fontWeight: "800", color: "white" }}>
-                                Hourly-Basis
-                            </Typography>
-                            <Typography sx={{ fontWeight: "400", fontSize: {lg:"17px", xs:'15px'}, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
-                                As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
-                            </Typography>
+                                    </Box>
+                                </Grid>
 
-                        </Box>
-                    </Grid>
-                    <Grid item data-aos='fade-left' xs={12} md={5} lg={2.9} sx={{ mt: {lg:"15px", xs:'22px'}, display: "flex", p: "15px", }}>
-                        <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring} height="100%" width="100%" />
-                        </Box>
-                    </Grid>
+                                <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, }}>
+                                    <Box sx={{ height: "270px", borderRadius: "25px", overflow: "hidden" }}>
+                                        <img src={hiring} height="100%" width="100%" style={{objectFit:'cover'}}/>
+                                    </Box>
+                                </Grid>
+                            </Grid>
 
 
+                        </Grid>
 
-
-                    <Grid item xs={0} sm={1} md={1.5} lg={2}></Grid>
-                    <Grid item data-aos='fade-right' xs={12} md={5} lg={2.9} sx={{ mt: "15px", display: "flex", }}>
-                        <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring2} height="100%" width="100%" />
-                        </Box>
                     </Grid>
 
-                    <Grid item xs={12} md={5} lg={6} sx={{ mt: {lg:"15px", xs:'1px'}, display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <Box sx={{ lineHeight: "2.5", height: "70%", pt: "20px" }}>
-                            <Typography sx={{ fontSize: {lg:"25px", md:'24px', sm:'23px', xs:'22px'}, fontWeight: "800", color: "white" }}>
-                                Part-Time Hiring
-                            </Typography>
-                            <Typography sx={{ fontWeight: "400", fontSize: {lg:"17px", xs:'15px'}, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
-                                As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
-                            </Typography>
-                        </Box>
+                    <Grid container sx={{ justifyContent: 'center', alignItems: 'center' }}>
+                        <Grid item lg={8} md={8} sm={8} xs={11} >
+                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center',flexWrap:'wrap-reverse' }}>
+                                <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, display: "flex", }}>
+                                    <Box sx={{ height: "270px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
+                                        <img src={hiring2} height="100%" width="100%" style={{objectFit:'cover'}}/>
+                                    </Box>
+                                </Grid>
+                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
+                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '22px' }, fontWeight: "800", color: "white" }}>
+                                            Hourly-Basis
+                                        </Typography>
+                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
+                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
+                                        </Typography>
+
+                                    </Box>
+                                </Grid>
+
+                            </Grid>
+
+
+                        </Grid>
+
+
                     </Grid>
 
+                    <Grid container sx={{ justifyContent: 'center', alignItems: 'center' }}>
+                        <Grid item lg={8} md={8} sm={8} xs={11} >
+                            <Grid container sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                                <Grid item xs={12} md={5} lg={6} sx={{ mt: "15px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <Box sx={{ lineHeight: "2.5", height: "70%", pt: { lg: "20px", md: '20px', sx: '10px', xs: '0px' } }}>
+                                        <Typography sx={{ fontSize: { lg: "25px", md: '24px', sm: '23px', xs: '23px' }, fontWeight: "800", color: "white" }}>
+                                            Hourly-Basis
+                                        </Typography>
+                                        <Typography sx={{ fontSize: { lg: "17px", xs: '15px' }, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
+                                            As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
+                                        </Typography>
 
-                    <Grid item xs={0} sm={1} md={1.5} lg={2}></Grid>
-                    <Grid item xs={12} md={5} lg={6} sx={{ mt: {lg:"15px", xs:'1px'}, display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <Box sx={{ lineHeight: "2.5", height: "70%", pt: "20px" }}>
-                            <Typography sx={{ fontSize: {lg:"25px", md:'24px', sm:'23px', xs:'22px'}, fontWeight: "800", color: "white" }}>
-                                Full-Time Hiring
-                            </Typography>
-                            <Typography sx={{ fontWeight: "400",  fontSize: {lg:"17px", xs:'15px'}, lineHeight: "25px", textAlign: "left", color: "#fff" }}>
-                                As the name suggests, the hourly-basis or pay-as-you-go model offers AngularJS development services on an hourly basis. Billing is done per hour but you have to pay on a monthly basis while you can communicate via phone, email or Skype.
-                            </Typography>
+                                    </Box>
+                                </Grid>
+                                <Grid item data-aos='fade-left' xs={12} md={5} lg={5} sx={{ mt: { lg: "15px", xs: '22px' }, display: "flex", }}>
+                                    <Box sx={{ height: "270px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
+                                        <img src={hiring3} height="100%" width="100%" style={{objectFit:'cover'}}/>
+                                    </Box>
+                                </Grid>
+                            </Grid>
 
-                        </Box>
+
+                        </Grid>
+
                     </Grid>
-                    <Grid item data-aos='fade-left' xs={12} md={5} lg={2.9} sx={{ mt: {lg:"15px", xs:'22px'}, display: "flex", p: "15px" }}>
-                        <Box sx={{ height: "250px", width: "100%", borderRadius: "25px", overflow: "hidden" }}>
-                            <img src={hiring3} height="100%" width="100%" />
-                        </Box>
-                    </Grid>
-
-
-
 
                 </Grid>
 
