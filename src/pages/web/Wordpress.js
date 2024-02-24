@@ -228,7 +228,7 @@ const Wordpress = () => {
                         </Grid>
                     </Grid>
                 </Box> */}
-                <Grid container sx={{ p: "20px" }}>
+                <Grid container sx={{ p: "20px",display:'flex',justifyContent:'center',alignItems:'center' }}>
                 
                 <Grid item xs={12} md={5} lg={5} data-aos='fade-up'>
                     <Typography sx={{ fontSize: {lg:"35px",md:'33px',sm:'30px',xs:'28px'}, fontWeight: "800", color: MAIN_COLOR }} >

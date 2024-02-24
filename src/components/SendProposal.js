@@ -32,7 +32,7 @@ const SendProposal = () => {
                     </Typography>
                     <Box sx={{display:'flex',justifyContent:'center',alignItems:'center'}} data-aos="fade-up">
 
-                    <Button variant='contained' onClick={()=>{navigate('/portfolio')}} sx={{fontSize:'16px',fontFamily:'serif',p:'8px 25px',borderRadius:'3px 15px 3px 15px'}}>Portfolio</Button>
+                    <Button variant='contained' onClick={()=>{navigate('/portfolio')}} sx={{fontSize:{lg:'16px',md:'15px',sm:'14px',xs:'13px'},fontFamily:'serif',p:{lg:'8px 25px',md:'8px 25px' ,sm:'7px 20px',sm:'6px 20px'},borderRadius:'3px 15px 3px 15px'}}>Portfolio</Button>
                     </Box>
                     
 

@@ -16,11 +16,11 @@ const ContactUs = () => {
         <>
             {state.currentScreenSize < 918 && <BottomNavBar />}
             <Header />
-            <Grid container >
+            <Grid container  >
 
-                <Grid container sx={{ pt: '90px', height: '440px', backgroundImage: `url(${contactwall})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgb(90,90,90)', backgroundBlendMode: 'multiply' }}>
-                    <Grid item xs={7} sx={{ mt: '-6%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-                        <Typography variant='h2' sx={{ fontSize: { lg: '55px', md: '48px', sm: '40px', xs: '36px' }, fontWeight: '600', textAlign: 'center', color: MAIN_COLOR }}>See Your Digital Transformation Growth With Us</Typography>
+                <Grid container sx={{ pt: '90px', height: {lg:'600px', md:'540px',sm:'500px',sm:'500px'}, backgroundImage: `url(${contactwall})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgb(90,90,90)', backgroundBlendMode: 'multiply' }}>
+                    <Grid item lg={7} md={7} sm={10} xs={10} sx={{ mt: '-6%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+                        <Typography variant='h2' sx={{ fontSize: { lg: '55px', md: '48px', sm: '40px', xs: '35px' }, fontWeight: '600', textAlign: 'center', color: MAIN_COLOR }}>See Your Digital Transformation Growth With Us</Typography>
                         {/* <Typography variant='h5' sx={{ fontSize: '30px', color: 'white', textAlign: 'center', }}>Get all Your question answer by our business development team.</Typography> */}
                         <Box sx={{ fontSize: { lg: '24px', md: '22px', sm: '20px', xs: '19px' }, color: 'white', mt: '5px' }}>
                             <Typewriter
@@ -86,7 +86,7 @@ const ContactUs = () => {
                                         <Typography sx={{ fontSize: '15px', fontWeight: '600', mt: '20px' }}>Note: I consent that my personal data will be processed according to <span style={{ color: '#1976d2' }}>AdelSocial' privacy policy </span>  </Typography>
                                     </Grid> */}
                                     <Grid item xs={12} sx={{ textAlign: 'center', mt: '15px' }}>
-                                        <Button variant='contained' sx={{ borderRadius: '10px', padding: '8px 17px' }}>Submit</Button>
+                                        <Button variant='contained' sx={{ borderRadius: '20px', padding: '10px 27px' }}>Submit</Button>
                                     </Grid>
                                 </Grid>
                             </Grid>
@@ -99,17 +99,24 @@ const ContactUs = () => {
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0553500909477!2d77.21102887449014!3d28.538055988366565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1fceaa6e5387%3A0x37ebbd6c60001afc!2sAdelSocial!5e0!3m2!1sen!2sin!4v1689831157113!5m2!1sen!2sin" width="100%" height="100%" style={{ border: '0', allowfullscreen: "", loading: "lazy", referrerpolicy: "no-referrer-when-downgrade", borderRadius: '10px' }}></iframe>
 
                         </Grid>
-                        <Grid item lg={4} md={5} sm={12} xs={12} sx={{ mt: { lg: '0px', md: '0px', sm: '10px', xs: '15px' }, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center' }}>
-                            <Typography  sx={{ fontSize: { lg: '30px', md: '27px', sm: '25px', xs: '24px' }, color: '#01579b', fontWeight: '600' }}>Locate Us</Typography>
-                            <Typography sx={{ fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' }, mt: '5px', textAlign: 'center' }}>P-27, Block P, <br />Shivalik Colony, Malviya Nagar,<br /> New Delhi, Delhi 110017, <br />info@adelsocial.com</Typography>
-                            <Typography sx={{ display: 'flex', justifyContent: 'left', alignItems: 'center', fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' } }}><PhoneIphoneIcon fontSize='small' />{MOBILE}</Typography>
-                            <Grid container sx={{ mt: { lg: '15px', md: '15px', sm: '17px', xs: '17px' } }}>
-                                <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+                        <Grid item lg={4} md={5} sm={12} xs={12} sx={{ mt: { lg: '0px', md: '0px', sm: '10px', xs: '15px' }}}>
+                        
+                            <Grid container sx={{ display: 'flex',  justifyContent: {lg:'right', md:'right',sm:'left',sm:'left'}, alignItems: 'center' }}>
+                                <Grid item xs={10} >
+                                <Typography  sx={{ fontSize: { lg: '30px', md: '27px', sm: '25px', xs: '24px' }, color: '#01579b', fontWeight: '600' }}>Locate Us</Typography>
+                            <Typography sx={{ fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' }, mt: '5px',  }}>P-27, Block P, <br />Shivalik Colony, Malviya Nagar,<br /> New Delhi, Delhi 110017, <br />info@adelsocial.com</Typography>
+                            <Typography sx={{ display: 'flex', justifyContent: 'left',  fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' } }}><PhoneIphoneIcon fontSize='small' />{MOBILE}</Typography>
+
+
+                                </Grid>
+
+                                <Grid item xs={10} sx={{ display: 'flex', justifyContent: 'center',  flexDirection: 'column' , mt:'30px'}}>
                                     <Typography  sx={{ fontSize: { lg: '30px', md: '27px', sm: '25px', xs: '24px' }, color: '#01579b', fontWeight: '600' }}>Working Hours</Typography>
-                                    <Typography sx={{ fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' }, mt: '5px', textAlign: 'center' }}>Our office is open 24*7 <br />Open Monday to Saturday<br /> From 08:00 AM to 07:00 PM</Typography>
+                                    <Typography sx={{ fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' }, mt: '5px',  }}>Our office is open 24*7 <br />Open Monday to Saturday<br /> From 08:00 AM to 07:00 PM</Typography>
 
                                 </Grid>
                             </Grid>
+
 
 
                         </Grid>

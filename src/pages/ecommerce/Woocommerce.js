@@ -308,55 +308,9 @@ const Woocommerce = () => {
                     </Grid>
                 <Grid item>
                     <Typography variant='h3'></Typography>
-                </Grid>
+                 </Grid>
             </Grid>
 
-
-            <Grid item xs={12} sx={{ pb: "40px", bgcolor: "#f1f1f1", display: "flex", justifyContent: "center" }}>
-                <Box sx={{ borderRadius: '60px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', bgcolor: 'white', width: { xs: "95%", sm: "95%", md: "95%", lg: "80%" }, mt: "50px", p: '30px' }}>
-                    <Typography sx={{ fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, fontWeight: "800", color: MAIN_COLOR }} >
-                        Looking to Hire Woocommerce Developers? You’re at the Right Spot
-                    </Typography>
-                    <Typography sx={{ fontSize: { xs: '12px', lg: '16px', }, color: '#212121',mt:"10px" }}>
-                        Are you in pursuit of a dedicated Woocommerce developer for your project? Our highly-qualified Woocommerce developers are just a click away. We have a pool of talented, proactive, and competent Woocommerce developers who have great expertise in Woocommerce development and can deliver tailored solutions to meet your unique business requirements. Our dedicated Woocommerce Developers follow a neatly refined and up-to-the-mark technical approach. You can hire highly skilled Woocommerce developers at AdelSocial as we have built proficiency in Woocommerce development over years with our extensive web development experiences. All these years, we have focused on accumulating the best Woocommerce developers from different regions to offer you to hire Woocommerce developers to meet your project goals using vast knowledge and skills.
-                        <br />
-                        <br />
-                        With our first-rate hire Woocommerce developer services, you are given the liberty to choose a Woocommerce developer from our team of Woocommerce programmers with different levels of expertise and experience. We can help you fulfill all your business requirements and objectives by letting you hire Woocommerce programmers, in the best equations of time and cost. Hiring Woocommerce developers, at AdelSocial, means you are relieved from unnecessary cost-bills, stress, and solutions with superior quality and performance.
-                    </Typography>
-                </Box>
-            </Grid>
-            <Box sx={{ p: "20px 10px", display:'flex', justifyContent:'center',alignItems:'center' }}>
-                <Grid className='dotnetPage'  container sx={{ borderRadius: "60px", pb: '20px', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: { xs: "100%", sm: "99.2%", md: "99%", lg: "83%" } }}>
-                    <Grid item xs={12} sx={{  mb: "20px", display: "flex", justifyContent: "center" ,borderRadius:'20px' }}>
-                        <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, mt: "50px" }}>
-                            <Typography sx={{ fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, fontWeight: "800", color: MAIN_COLOR }} >
-                                Our Complete Suite of Woocommerce Development Services
-                            </Typography>
-                            <Typography sx={{ color: 'white', fontSize: { xs: '12px', lg: '18px' } }}>
-                                Our Woocommerce development services include everything from Woocommerce web app development to Woocommerce CMS development to desktop app development and much more. Dedicated Woocommerce developers at AdelSocial are highly skilled and capable of building high-end Woocommerce solutions that will take your business a few notches higher.
-                            </Typography>
-
-                        </Box>
-                    </Grid>
-
-                    <Grid container sx={{ width: '100%', display:'flex', justifyContent:'center', alignItems:'center' }} spacing={2}>
-                        {
-                            netInfo.map((ele) => {
-                                return (
-
-                                    <Grid item xs={12} sm={6} md={3} lg={3} data-aos='fade-up' sx={{ borderLeft: `6px solid ${MAIN_COLOR}`, p: "15px 10px 15px 10px", lineHeight: "2", m: "15px" }}>
-                                        <Box>
-                                            {ele.icon}
-                                        </Box>
-                                        <Typography sx={{ fontWeight: "800", fontSize: "20px", wordSpacing: "2px", letterSpacing: "px", color: MAIN_COLOR }}>{ele.title}</Typography>
-                                        <Typography sx={{ wordSpacing: "2px", mt: "10px", color: 'white', fontSize: { xs: '12px', lg: '15px' } }}>{ele.about}</Typography>
-                                    </Grid>
-                                )
-                            })
-                        }
-                    </Grid>
-                </Grid>
-            </Box>
 
             <Grid item xs={12} sx={{ pb: "40px", bgcolor: "#f1f1f1", display: "flex", justifyContent: "center" }}>
                 <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, mt:"15px",textAlign:{xs:"",sm:"",md:"center",lg:"center"} }}>
@@ -369,7 +323,7 @@ const Woocommerce = () => {
 
                     <Box sx={{ display: "flex", alignItems: "center", flexWrap: "wrap" }}>
                         <Box data-aos='fade-up' sx={{ mt: "20px", height: { xs: "300px", sm: "300px", md: "380px", lg: "420px" } }}>
-                            <img src={orangenet} style={{ borderRadius: '90px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', }} alt='pic' height="100%" width="100%" />
+                            <img src={orangenet} style={{ borderRadius: '20px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', }} alt='pic' height="100%" width="100%" />
                         </Box>
                         <Box sx={{ml:'30px'}}>
                             {
@@ -388,92 +342,91 @@ const Woocommerce = () => {
                 </Box>
             </Grid>
             
-
             <Grid className='dotnetPage' item xs={12} sx={{ pb: "40px", display: "flex", justifyContent: "center", mt: '0px', pt: '30px' }}>
-                <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" } }}>
-                    <Typography sx={{ fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, fontWeight: "800", color: MAIN_COLOR }} >
-                        Woocommerce Technologies We Use
-                    </Typography>
-                    <Typography sx={{ fontSize: { xs: '12px', lg: '16px'},color: 'white'  }}>Our Woocommerce developers have an iron grip of core and advanced Woocommerce technologies to facilitate the agile development of quality-oriented web apps for your business. Some of the cutting-edge Woocommerce technologies and tools we work on include:</Typography>
-
-                    <Box>
-                        <Typography sx={{ fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, color: MAIN_COLOR, m: "30px 0px" }} >
-                            Woocommerce Technologies
+                    <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" } }}>
+                        <Typography sx={{ fontSize: { lg: "33px", md: "30px", sm: "28px", xs: "22px" }, fontWeight: "800", color: MAIN_COLOR }} >
+                            Woocommerce Technologies We Use
                         </Typography>
-                        <Grid container spacing={2}>
-                            {
-                                Technologies1.map((ele) => {
-                                    return (
-                                        <Grid item xs={12} sm={6} md={4} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'0px 10px 10px 0px ' }}>
-                                            <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0", height: "75px", borderRadius: "18px" }} elevation={7}>
-                                                <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
-                                                    <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
-                                                </Typography>
-                                            </Paper>
-                                        </Grid>
-                                    )
-                                })
-                            }
+                        <Typography sx={{ fontSize: { xs: '12px', lg: '16px' }, color: 'white' }}>Our Php developers have an iron grip of core and advanced Php technologies to facilitate the agile development of quality-oriented web apps for your business. Some of the cutting-edge Php technologies and tools we work on include:</Typography>
 
-                        </Grid> 
+                        <Box>
+                            <Typography sx={{ fontSize: { lg: "33px", md: "30px", sm: "28px", xs: "22px" }, color: MAIN_COLOR, m: "30px 0px" }} >
+                                Php Technologies
+                            </Typography>
+                            <Grid container >
+                                {
+                                    Technologies1.map((ele) => {
+                                        return (
+                                            <Grid item xs={12} sm={6} md={4} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', p: '10px ' }}>
+                                                <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0", height: "75px", borderRadius: "18px" }} elevation={7}>
+                                                    <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
+                                                        <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
+                                                    </Typography>
+                                                </Paper>
+                                            </Grid>
+                                        )
+                                    })
+                                }
+
+                            </Grid>
+                        </Box>
+
                     </Box>
 
-                </Box>
+                </Grid>
 
-            </Grid>
+                <Grid className='dotnetPage' item xs={12} sx={{ pb: "15px", display: 'flex', justifyContent: 'center' }}>
+                    <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, }}>
+                        <Box>
+                            <Typography sx={{ fontSize: { lg: "33px", md: "30px", sm: "28px", xs: "22px" }, m: '30px 0px', fontWeight: "900", color: MAIN_COLOR }} >
+                                Application Testing Tools
+                            </Typography>
+                            <Grid container  >
+                                {
+                                    Technologies2.map((ele) => {
+                                        return (
+                                            <Grid item xs={12} sm={6} md={6} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', p: '10px' }}>
+                                                <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0", height: "75px", borderRadius: "18px", }} elevation={2}>
+                                                    <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
+                                                        <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
+                                                    </Typography>
+                                                </Paper>
+                                            </Grid>
+                                        )
+                                    })
+                                }
 
-            <Grid className='dotnetPage' item xs={12} sx={{ pb: "15px",display:'flex', justifyContent:'center'  }}>
-                <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, }}>
-                    <Box>
-                        <Typography sx={{fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, m: '30px 0px', fontWeight: "900", color: MAIN_COLOR }} >
-                            Application Testing Tools
-                        </Typography>
-                        <Grid container spacing={2} >
-                            {
-                                Technologies2.map((ele) => {
-                                    return (
-                                        <Grid item xs={12} sm={6} md={6} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'0px 14px 15px 0px'  }}>
-                                        <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0",  height: "75px", borderRadius: "18px" , }} elevation={2}>
-                                            <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
-                                                <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
-                                            </Typography>
-                                        </Paper>
-                                    </Grid>
-                                    )
-                                })
-                            }
+                            </Grid>
+                        </Box>
 
-                        </Grid>
                     </Box>
-
-                </Box>
-            </Grid>
+                </Grid>
 
 
-            <Grid className='dotnetPage' item xs={12} sx={{ pb: "15px", display: "flex", justifyContent: "center" }}>
-                <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, }}>
-                    <Box>
-                        <Typography sx={{ fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, m: '30px 0px', fontWeight: "800", color: MAIN_COLOR }} >
-                            Payment Gateway Integrations
-                        </Typography>
-                        <Grid container spacing={2}>
-                            {
-                                Technologies3.map((ele) => {
-                                    return (
-                                        <Grid item xs={12} sm={6} md={4} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)',p:'0px 10px 10px 0px' }}>
-                                            <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0", p: "10px", height: "75px", borderRadius: "18px" }} elevation={2}>
-                                                <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
-                                                    <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
-                                                </Typography>
-                                            </Paper>
-                                        </Grid>
-                                    )
-                                })
-                            }
-                        </Grid>
+                <Grid className='dotnetPage' item xs={12} sx={{ pb: "15px", display: "flex", justifyContent: "center" }}>
+                    <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, }}>
+                        <Box>
+                            <Typography sx={{ fontSize: { lg: "33px", md: "30px", sm: "28px", xs: "22px" }, m: '30px 0px', fontWeight: "800", color: MAIN_COLOR }} >
+                                Payment Gateway Integrations
+                            </Typography>
+                            <Grid container >
+                                {
+                                    Technologies3.map((ele) => {
+                                        return (
+                                            <Grid item xs={12} sm={6} md={4} lg={3} sx={{ borderRadius: '10px', boxShadow: '3px 4px 21px 1px rgba(0,0,0,0.75)', p: '10px' }}>
+                                                <Paper sx={{ display: 'flex', justifyContent: 'center', border: "2px solid #e0e0e0", p: "10px", height: "75px", borderRadius: "18px" }} elevation={2}>
+                                                    <Typography sx={{ display: "flex", alignItems: "center", fontSize: "20px", fontWeight: 900, color: MAIN_COLOR }}>
+                                                        <CheckBoxIcon sx={{ mr: "8px", color: MAIN_COLOR, fontSize: "25px" }} />{ele}
+                                                    </Typography>
+                                                </Paper>
+                                            </Grid>
+                                        )
+                                    })
+                                }
+                            </Grid>
+                        </Box>
                     </Box>
-                </Box>
-            </Grid>
+                </Grid>
 
             <Grid item xs={12} sx={{ pb: "15px" }}>
                 <Box sx={{ display: "flex", justifyContent: "center", mb: '80px' }}>
@@ -487,7 +440,7 @@ const Woocommerce = () => {
                     </Box>
                 </Box>
                 <Box sx={{ display: "flex", justifyContent: "center", mt: "20px" }}>
-                    <Grid container sx={{ width: { xs: "99%", sm: "99%", md: "70%", lg: "80%" }, display:'flex', justifyContent:'space-between', alignItems:'center', bgcolor:'black', borderRadius:'10px'}} >
+                    <Grid container sx={{ width: { xs: "99%", sm: "99%", md: "70%", lg: "80%" }, display:'flex', justifyContent:'space-between', alignItems:'center', borderRadius:'10px'}} >
                         {
                             AllBuisness.map((ele) => {
                                 return (
@@ -506,7 +459,6 @@ const Woocommerce = () => {
                     </Grid>
                 </Box>
             </Grid>
-
             <Grid item xs={12} sx={{ display: "flex", justifyContent: "center" }}>
                 <Box sx={{ width: { xs: "100%", sm: "90%", md: "70%", lg: "70%" }, mt: "10px" }}>
                     <Grid item container>
