@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import hireDeveloper from '../assets/hireDeveloper.jpg'
 import { Box, Button, Container, Grid, Paper, Typography } from '@mui/material'
 import hireGirl from '../assets/N-career1.png'
@@ -15,55 +15,61 @@ import bannerNew from '../assets/footer-banner-new.png'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { MAIN_COLOR } from '../constant'
-import SendMessage from '../components/SendMessage'
+import SendMessage from '../components/SendMessage';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// import SendMessage from '../components/SendMessage'
 
 
 
 const HireDevelopers = () => {
     const langauageMap = Array(18).fill(1)
+    useEffect(() => {
+        AOS.init({ duration: 2000});
+    }, []);
 
     const netInfo3 = [{
-        icon: <PeopleOutlineIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <PeopleOutlineIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Team Selection",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <PsychologyIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <PsychologyIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Interview",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <BackupTableIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <BackupTableIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Agreement",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <DescriptionIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <DescriptionIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Project Kick-off",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <PeopleOutlineIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <PeopleOutlineIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Team Selection",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <PsychologyIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <PsychologyIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Interview",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <BackupTableIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <BackupTableIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Agreement",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <DescriptionIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <DescriptionIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Project Kick-off",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <PeopleOutlineIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <PeopleOutlineIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Team Selection",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
@@ -71,47 +77,47 @@ const HireDevelopers = () => {
     ]
 
     const netInfo = [{
-        icon: <PeopleOutlineIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <PeopleOutlineIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Hire Dedicated Dot NET Developers",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <SettingsSuggestIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <SettingsSuggestIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Hire Dedicated Dot NET Developers",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <SettingsSuggestIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <SettingsSuggestIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Hire Dedicated Dot NET Developers",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <SettingsSuggestIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <SettingsSuggestIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Hire Dedicated Dot NET Developers",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <SettingsSuggestIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <SettingsSuggestIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Hire Dedicated Dot NET Developers",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <SettingsSuggestIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <SettingsSuggestIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Hire Dedicated Dot NET Developers",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <SettingsSuggestIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <SettingsSuggestIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Hire Dedicated Dot NET Developers",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <SettingsSuggestIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <SettingsSuggestIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Hire Dedicated Dot NET Developers",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
     {
-        icon: <SettingsSuggestIcon sx={{ color: MAIN_COLOR, fontSize: "50px" }} />,
+        icon: <SettingsSuggestIcon sx={{ color: MAIN_COLOR, fontSize: "40px" }} />,
         title: "Hire Dedicated Dot NET Developers",
         about: "Our dedicated Dot NET developers build robust, scalable, and secure web portals, desktop apps, and CMS for enterprises that are built to meet their business objectives."
     },
@@ -124,7 +130,7 @@ const HireDevelopers = () => {
 
             <Header />
             <Container disableGutters maxWidth>
-                <Grid container sx={{ backgroundImage: `url(${hireDeveloper})`, backgroundBlendMode: "multiply", backgroundRepeat: "no-repeat", backgroundSize: "cover", bgcolor: "rgba(0, 0, 0, 0.5)", p: "50px", pt: '90px', }}>
+                <Grid container sx={{height:'400px', backgroundImage: `url(${hireDeveloper})`, backgroundBlendMode: "multiply", backgroundRepeat: "no-repeat", backgroundSize: "cover", bgcolor: "rgba(0, 0, 0, 0.5)", p: "50px", pt: '90px', }}>
                     <Grid item xs={2} sm={2} md={1} lg={1} >
 
                     </Grid>
@@ -164,13 +170,13 @@ const HireDevelopers = () => {
                     </Grid>
                     <Grid item xs={12} md={5} lg={4} sx={{ p: "15px" }}>
                         <Box sx={{ overflow: "hidden" }}>
-                            <img src={hireGirl} alt='pic' width="100%" />
+                            <img src={hireGirl} alt='pic' width="100%" style={{borderRadius:'10px'}}/>
                         </Box>
                     </Grid>
                 </Grid>
                 <Grid container sx={{ p: "15px" }} >
                     <Grid item xs={0} sm={0} md={1} lg={1.8}></Grid>
-                    <Grid item xs={12} md={10.2} lg={10.2} >
+                    <Grid item xs={12} md={10.2} lg={9.4} >
                         <Box >
                             <Typography sx={{ fontSize: "35px", fontWeight: "800", color: MAIN_COLOR }} >
                                 Why Hire Developers For Your Project? </Typography>
@@ -185,28 +191,28 @@ const HireDevelopers = () => {
                 <Grid container sx={{ mt: "20px", p: "15px", bgcolor: "#F4F4F4" }}>
                     <Grid item xs={12} sx={{ display: "flex", justifyContent: "space-evenly", alignItems: "center", flexWrap: "wrap" }}>
                         <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", m: "10px" }}>
-                            <Box sx={{ height: "80px", width: "80px" }}>
+                            <Box sx={{ height: {lg:"70px", md:'60px',sm:'50px',xs:'40px'}, width: {lg:"70px", md:'60px',sm:'50px',xs:'40px'} }}>
                                 <img src={career1} alt='pic' height="100%" width="100%" />
                             </Box>
-                            <Typography sx={{ fontFamily: 'montserratbold', fontWeight: "800", fontSize: "30px", margin: "20px 0 0", color: MAIN_COLOR }}>
+                            <Typography sx={{ fontFamily: 'montserratbold', fontWeight: "800", fontSize:{lg:"25px", md:'23px', sm:'22px',xs:'20px'}, margin: "20px 0 0", color: MAIN_COLOR }}>
                                 Flexibility
                             </Typography>
                         </Box>
 
                         <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", m: "10px" }}>
-                            <Box sx={{ height: "80px", width: "80px" }}>
+                            <Box sx={{ height: {lg:"70px", md:'60px',sm:'50px',xs:'40px'}, width: {lg:"70px", md:'60px',sm:'50px',xs:'40px'} }}>
                                 <img src={career2} alt='pic' height="100%" width="100%" />
                             </Box>
-                            <Typography sx={{ fontFamily: 'montserratbold', fontWeight: "800", fontSize: "30px", margin: "20px 0 0", color: MAIN_COLOR }}>
+                            <Typography sx={{ fontFamily: 'montserratbold', fontWeight: "800", fontSize:{lg:"25px", md:'23px', sm:'22px',xs:'20px'}, margin: "20px 0 0", color: MAIN_COLOR }}>
                                 Cost Savings
                             </Typography>
                         </Box>
 
                         <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", m: "10px" }}>
-                            <Box sx={{ height: "80px", width: "80px" }}>
+                            <Box sx={{ height: {lg:"70px", md:'60px',sm:'50px',xs:'40px'}, width: {lg:"70px", md:'60px',sm:'50px',xs:'40px'} }}>
                                 <img src={career3} alt='pic' height="100%" width="100%" />
                             </Box>
-                            <Typography sx={{ fontFamily: 'montserratbold', fontWeight: "800", fontSize: "30px", margin: "20px 0 0", color: MAIN_COLOR }}>
+                            <Typography sx={{ fontFamily: 'montserratbold', fontWeight: "800", fontSize: {lg:"25px", md:'23px', sm:'22px',xs:'20px'}, margin: "20px 0 0", color: MAIN_COLOR }}>
                                 Complete Control
                             </Typography>
                         </Box>
@@ -214,9 +220,9 @@ const HireDevelopers = () => {
                 </Grid>
                 <Grid container sx={{ p: "15px" }} >
                     <Grid item xs={0} sm={1} md={1} lg={1.8}></Grid>
-                    <Grid item xs={12} md={10.2} lg={10.2} >
+                    <Grid item xs={12} md={10.2} lg={9.4} >
                         <Box >
-                            <Typography sx={{ fontSize: "35px", fontWeight: "800", color: MAIN_COLOR }} >
+                            <Typography sx={{ fontSize:  { lg: '30px', md: '30px', sm: '30px', xs: '28px' }, fontWeight: "800", color: MAIN_COLOR }} >
                                 Our Expertise – What Makes Us The Best Destination To Hire Full Stack Developers </Typography>
                             <Typography sx={{ mt: "10px", fontSize: "17px", fontFamily: "montserratregular", lineHeight: "1.8" }}>
                                 We cater extensive expertise in a range of technologies to help businesses build optimal solutions that overcome their challenges and drive comprehensive growth.
@@ -225,7 +231,7 @@ const HireDevelopers = () => {
                     </Grid>
 
                 </Grid>
-                <Grid container sx={{ mt: "10px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                <Grid container sx={{ mt: "10px", display: "flex", justifyContent: "center", alignItems: "center", bgcolor:'black' }}>
                     <Grid item container xs={12} sm={12} md={9} lg={8.1} spacing={3} p="20px">
                         {
                             langauageMap.map((_, index) => {
@@ -246,10 +252,10 @@ const HireDevelopers = () => {
                 </Grid>
 
 
-                <Grid container sx={{ bgcolor: "#002F96", mt: "20px" }}>
+                <Grid container sx={{ bgcolor: "#002F96",  }}>
                     <Grid item xs={12} sx={{ display: "flex", justifyContent: "center" }}>
                         <Box sx={{ width: { xs: "90%", sm: "90%", md: "68%", lg: "68%" }, mt: "50px" }}>
-                            <Typography sx={{ fontSize: "40px", fontWeight: "800", color: "white" }} >
+                            <Typography sx={{ fontSize:  { lg: '30px', md: '30px', sm: '30px', xs: '28px' }, fontWeight: "800", color: "white" }} >
                                 AdelSocial Integrity
                             </Typography>
                         </Box>
@@ -261,7 +267,7 @@ const HireDevelopers = () => {
                                     return (
 
                                         <Grid key={index} item xs={12} sm={12} md={6} lg={4} sx={{ p: "15px 10px 15px 10px", lineHeight: "2" }}>
-                                            <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", bgcolor: "white", height: "100px", width: "100px", borderRadius: "100%" }}>
+                                            <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", bgcolor: "white", height: "80px", width: "80px", borderRadius: "100%" }}>
                                                 {ele.icon}
                                             </Box>
                                             <Typography sx={{ mt: "15px", color: "white", fontWeight: "800", fontSize: "20px", wordSpacing: "2px", letterSpacing: "px" }}>{ele.title}</Typography>
@@ -277,7 +283,7 @@ const HireDevelopers = () => {
                     <Grid item xs={1.8} mt="20px"></Grid>
                     <Grid item xs={10} mt="20px">
                         <Box sx={{ width: { xs: "90%", sm: "90%", md: "75%", lg: "75%" }, mt: "50px" }}>
-                            <Typography sx={{ fontSize: "40px", fontWeight: "800", color: MAIN_COLOR }} >
+                            <Typography sx={{ fontSize:  { lg: '30px', md: '30px', sm: '30px', xs: '28px' }, fontWeight: "800", color: MAIN_COLOR }} >
                                 Our Value Preposition
                             </Typography>
                         </Box>
@@ -302,10 +308,11 @@ const HireDevelopers = () => {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Box p="15px">
+                <Box >
                     <img src={bannerNew} alt='pic' width="100%" />
                 </Box>
                 <SendMessage />
+                {/* <SendMessage/> */}
                 <Footer />
 
             </Container>

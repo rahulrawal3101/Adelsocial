@@ -8,6 +8,7 @@ import WifiCalling3Icon from '@mui/icons-material/WifiCalling3';
 import WorkIcon from '@mui/icons-material/Work';
 import { MAIN_COLOR } from '../constant';
 import { useNavigate } from 'react-router-dom';
+import NotesIcon from '@mui/icons-material/Notes';
 
 export default function BottomNavBar() {
     const [value, setValue] = React.useState(0);
@@ -15,7 +16,7 @@ export default function BottomNavBar() {
     return (
         <Box sx={{ width: '100%', position: 'fixed', bottom: 0, zIndex: 9999 }}>
             <BottomNavigation
-                style={{ backgroundColor: MAIN_COLOR, color: 'white' }}
+                style={{ backgroundColor: MAIN_COLOR, color: 'white',overflowX:'scroll'}}
                 showLabels
                 value={value}
                 onChange={(event, newValue) => {
@@ -23,8 +24,9 @@ export default function BottomNavBar() {
                 }}>
                 <BottomNavigationAction onClick={() => navigate('/')} style={{ fontWeight: 900, color: 'white' }} label="Home" icon={<HomeIcon sx={{ color: 'white' }} />} />
                 <BottomNavigationAction onClick={() => navigate('/about')} style={{ fontWeight: 900, color: 'white' }} label="About" icon={<EmailIcon sx={{ color: 'white' }} />} />
-                <BottomNavigationAction onClick={() => navigate('/jobopenings')} style={{ fontWeight: 900, color: 'white' }} label="Job Openings" icon={<WorkIcon sx={{ color: 'white' }} />} />
-                <BottomNavigationAction onClick={() => navigate('/contact')} style={{ fontWeight: 900, color: 'white' }} label="Contact" icon={<WifiCalling3Icon sx={{ color: 'white' }} />} />
+                <BottomNavigationAction onClick={() => navigate('/jobopenings')} style={{ fontWeight: 900, color: 'white'}} label="Job Openings" icon={<WorkIcon sx={{ color: 'white' }} />} />
+                <BottomNavigationAction onClick={() => navigate('/contact')} style={{ fontWeight: 900, color: 'white', }} label="Contact" icon={<WifiCalling3Icon sx={{ color: 'white' }} />} />
+                <BottomNavigationAction onClick={() => navigate('/itservices')} style={{ fontWeight: 900, color: 'white', }} label="IT Services" icon={<NotesIcon sx={{ color: 'white' }} />} />
             </BottomNavigation>
         </Box>
     );

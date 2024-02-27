@@ -1,4 +1,4 @@
-import { Box, Drawer, Grid, Typography } from '@mui/material';
+import { Accordion, AccordionDetails, AccordionSummary, Box, Drawer, Grid, Typography } from '@mui/material';
 import React from 'react';
 import adellogo from '../assets/adellogo.png';
 import SearchIcon from '@mui/icons-material/Search';
@@ -12,13 +12,14 @@ import { MAIN_COLOR } from '../constant';
 import Typewriter from 'typewriter-effect';
 import { AdelContext } from '../store/Context';
 import './SideDrawer.css';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const socialIcons = [{ icon: <InstagramIcon sx={{ color: MAIN_COLOR, '&:hover': { color: MAIN_COLOR } }} />, name: "insta", link: 'https://www.instagram.com/adelsociall/' }, { icon: <FacebookIcon sx={{ color: MAIN_COLOR, '&:hover': { color: MAIN_COLOR } }} />, name: "face", link: 'https://www.facebook.com/AdelSocial/' }, { icon: <TwitterIcon sx={{ color: MAIN_COLOR, '&:hover': { color: MAIN_COLOR } }} />, name: "twit", link: 'https://twitter.com/i/flow/login?redirect_after_login=%2Fadelsocial' }, { icon: <LinkedInIcon sx={{ color: MAIN_COLOR, '&:hover': { color: MAIN_COLOR } }} />, name: "link", link: 'https://www.linkedin.com/company/adelsocial/' }];
 
 const data = [
     { title: 'Services', list: [{ service: 'Whatsapp API', path: 'ADEL' }, { service: 'Bulk Whatsapp', path: 'ADEL' }, { service: 'Bulk Mailer', path: 'ADEL' }, { service: 'Bulk SMS', path: 'ADEL' }] },
     { title: 'Products', list: [{ service: 'Whatsapp Web Panel', path: 'ADEL' }] },
-    { title: 'Expertise', list: [{ service: 'Backend', path: '/dotnet' }, { service: 'Frontend', path: '/angular' }, { service: 'App Development', path: '/mobile' }, { service: 'Web Development', path: '/wordpress' }, { service: 'Digital Marketing', path: '/digital' }, { service: 'E-Commerce', path: '/ecommerce' }] }
+    // { title: 'Expertise', list: [{ service: 'Backend', path: '/dotnet' }, { service: 'Frontend', path: '/angular' }, { service: 'App Development', path: '/mobile' }, { service: 'Web Development', path: '/wordpress' }, { service: 'Digital Marketing', path: '/digital' }, { service: 'E-Commerce', path: '/ecommerce' }] }
 ]
 
 
@@ -66,7 +67,7 @@ const FirstSideDrawer = ({ dOpen, setDOpen }) => {
                         </Grid>
                         <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: MAIN_COLOR, pb: '15px' }}>
                             <Box sx={{ bgcolor: 'white', width: '240px', height: '60px', borderRadius: '10px' }}>
-                                <img src={adellogo} style={{ height: '100%', width: '100%' }} />
+                                <img src={adellogo} style={{ height: '100%', width: '100%' }} onClick={() => { navigate('/') }} />
                             </Box>
 
                         </Grid>
@@ -74,12 +75,12 @@ const FirstSideDrawer = ({ dOpen, setDOpen }) => {
                     </Grid>
 
 
-                    <Grid item xs={12} sx={{ pb: '60px' }}>
+                    <Grid item xs={12} >
                         <Box
                             sx={{ height: '100%', bgcolor: 'white', color: 'white', }} role="presentation" >
                             {data.map((item) => {
                                 return <div key={item.title}>
-                                    <Box sx={{ p: '5px', bgcolor:MAIN_COLOR, }}>
+                                    <Box sx={{ p: '5px', bgcolor: MAIN_COLOR, }}>
                                         <Typography textAlign={'center'} variant='h1' sx={{ fontWeight: 900, letterSpacing: '2px', fontSize: '17px' }}>
                                             {item.title}
                                         </Typography>
@@ -99,7 +100,102 @@ const FirstSideDrawer = ({ dOpen, setDOpen }) => {
                         </Box>
                     </Grid>
 
-                    <Grid item xs={12} sx={{ pb: '60px' }}>
+                    <Grid container >
+                        <Grid item xs={12} sx={{ p: '5px', bgcolor: MAIN_COLOR, }}>
+                            <Typography textAlign={'center'} variant='h1' sx={{ fontWeight: 900, letterSpacing: '2px', fontSize: '17px', color: 'white' }}>IT Services</Typography>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <Accordion >
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel1-content"
+                                    id="panel1-header"
+                                >
+                                    Backend
+                                </AccordionSummary>
+                                <AccordionDetails sx={{bgcolor:'black',color:'white'}}>
+                                   <Typography onClick={()=>{navigate('/dotnet')}} >.NET</Typography>
+                                   <Typography onClick={()=>{navigate('/php')}}>PHP</Typography>
+                                   <Typography onClick={()=>{navigate('/python')}}>Python</Typography>
+                                   <Typography onClick={()=>{navigate('/java')}}>Java</Typography>
+                                   <Typography onClick={()=>{navigate('/graphql')}}>GraphQL</Typography>
+                                   
+                                </AccordionDetails>
+                            </Accordion>
+
+                            <Accordion >
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel1-content"
+                                    id="panel1-header"
+                                >
+                                    Frontend
+                                </AccordionSummary>
+                                <AccordionDetails sx={{bgcolor:'black',color:'white'}}>
+                                   <Typography onClick={()=>{navigate('/angular')}}>Angular</Typography>
+                                   <Typography onClick={()=>{navigate('/react')}}>React</Typography>
+                                   <Typography onClick={()=>{navigate('/htmlcss')}}>HTML/CSS</Typography>
+                                   <Typography onClick={()=>{navigate('/vuejs')}}>Vue Js</Typography>
+                                   
+                                </AccordionDetails>
+                            </Accordion>
+
+                            <Accordion >
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel1-content"
+                                    id="panel1-header"
+                                >
+                                    Mobile
+                                </AccordionSummary>
+                                <AccordionDetails sx={{bgcolor:'black',color:'white'}}>
+                                   <Typography onClick={()=>{navigate('/android')}}>Android</Typography>
+                                   <Typography onClick={()=>{navigate('/ios')}}>iOS</Typography>
+                                   <Typography onClick={()=>{navigate('/reactnative')}}>React Native</Typography>
+                                   <Typography onClick={()=>{navigate('/flutter')}}>Flutter</Typography>
+                                   
+                                   
+                                </AccordionDetails>
+                            </Accordion>
+
+                            <Accordion >
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel1-content"
+                                    id="panel1-header"
+                                >
+                                    Digital
+                                </AccordionSummary>
+                                <AccordionDetails sx={{bgcolor:'black',color:'white'}}>
+                                   <Typography onClick={()=>{navigate('/seo')}}>SEO</Typography>
+                                   <Typography onClick={()=>{navigate('/digital')}}>Digital Marketing</Typography>
+                                </AccordionDetails>
+                            </Accordion>
+
+                            <Accordion >
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel1-content"
+                                    id="panel1-header"
+                                >
+                                    Web
+                                </AccordionSummary>
+                                <AccordionDetails sx={{bgcolor:'black',color:'white'}}>
+                                   <Typography onClick={()=>{navigate('/laravel')}}>Laravel</Typography>
+                                   <Typography onClick={()=>{navigate('/python')}}>Python</Typography>
+                                   <Typography onClick={()=>{navigate('/php')}}>PHP</Typography>
+                                   <Typography onClick={()=>{navigate('/wordpress')}}>WordPress</Typography>
+                                   <Typography onClick={()=>{navigate('/drupal')}}>Drupal</Typography>
+                                   
+                                   
+                                </AccordionDetails>
+                            </Accordion>
+
+                        </Grid>
+                    </Grid>
+
+
+                    <Grid item xs={12} sx={{ pb: '150px' , pt:'40px'}}>
 
                         <Box sx={{ display: "flex", justifyContent: "space-around", alignItems: 'center', mb: { lg: '0px', md: '0px', sm: '10px', xs: '20px' } }}>
                             {

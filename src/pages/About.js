@@ -101,7 +101,7 @@ const About = () => {
             <Header />
             <Container disableGutters maxWidth={false} sx={{ overflow: "hidden" }}>
                 <Grid container sx={{ height: 'fit-content', padding: { lg: '200px 100px', xs: '100px 20px' }, backgroundImage: `url(${aboutimg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: 'rgb(80,80,80)', backgroundBlendMode: 'multiply', display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
-                    <Grid item xs={12} lg={4} sx={{ height: '300px', mb: { xs: '40px', lg: '0px', sm: '0px', md: '0px' } }}>
+                    <Grid item xs={12} lg={4} sx={{ height: {lg:'300px',md:'300px',sm:'250px',xs:'250px'}, mb: { xs: '0px', lg: '0px', sm: '0px', md: '0px' } }}>
                         <Grid container>
                             <Grid item xs={12} sx={{ borderLeft: `5px solid ${MAIN_COLOR}`, padding: '10px' }}>
                                 <Typography variant='h1' sx={{ fontSize: { lg: '40px', xs: '20px' }, color: 'white', fontWeight: '600' }}>
@@ -116,7 +116,7 @@ const About = () => {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item xs={12} lg={6} sx={{ height: 'fit-content' }}>
+                    <Grid item xs={12} lg={6} sx={{ height: 'fit-content'}}>
                         <Grid container>
                             <Grid item xs={12} >
                                 <Typography sx={{ color: MAIN_COLOR, fontSize: '35px', fontWeight: '600' }}>What We Do</Typography>
@@ -140,7 +140,7 @@ const About = () => {
                     </Grid>
                 </Grid>
                 <Grid container>
-                    <Grid item xs={12} sx={{ bgcolor: 'black', height: '470px', textAlign: "center", padding: '20px 25px' }}>
+                    <Grid item xs={12} sx={{ bgcolor: 'black', height: {lg:'470px', md:'470px',sm:'400px',xs:'400px'}, textAlign: "center", padding: '20px 25px',}}>
                         <Typography variant='h1' sx={{ color: 'white', fontSize: { lg: '41px', xs: '20px' }, fontWeight: '600', mt: '15px' }}>Let's Realize Your <br /><span style={{ color: MAIN_COLOR }}>Digital</span> Business Now</Typography>
                         <hr></hr>
                         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
@@ -149,7 +149,7 @@ const About = () => {
                         </Box>
                     </Grid>
                     <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Grid item xs={9.5} sx={{ height: { lg: '430px', xs: '320px' }, mt: '-15rem', backgroundBlendMode: 'multiply', backgroundImage: `url(${meeting3})`, borderRadius: '20px', backgroundSize: { lg: 'cover', md: 'cover', sm: 'cover', xs: 'cover' }, backgroundRepeat: 'no-repeat', backgroundPosition: 'center',backgroundColor:'rgba(0,0,0,0.2)' }} data-aos="fade-up"></Grid>
+                        <Grid item lg={9.5} md={9.5} sm={10} xs={11}  sx={{ height: { lg: '430px', xs: '320px' }, mt: '-15rem', backgroundBlendMode: 'multiply', backgroundImage: `url(${meeting3})`, borderRadius: {lg:'20px', md:'20px',sm:'10px',xs:'10px'}, backgroundSize: { lg: 'cover', md: 'cover', sm: 'cover', xs: 'cover' }, backgroundRepeat: 'no-repeat', backgroundPosition:'center',backgroundColor:'rgba(0,0,0,0.2)' }} data-aos="fade-up"></Grid>
                         <Grid item xs={9.5} sx={{ display: { lg: 'block', md: 'block', sm: 'none', xs: 'none' }, mt: '10px' }}>
                             <Grid container sx={{ padding: '10px 0px', borderRadius: "20px", border: '3.5px solid black', display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }} >
                                 <Grid item lg={3} md={12} sm={12} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -203,7 +203,7 @@ const About = () => {
                     </Grid>
                 </Grid>
                 <Grid container sx={{ bgcolor: 'white', display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', pb: '20px' }}>
-                    <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', flexDirection: 'column', mt: '30px' }} data-aos="fade-up">
+                    <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', flexDirection: 'column', mt: '30px', p:'10px' }} data-aos="fade-up">
                         <Typography variant='h2' sx={{ fontSize: { lg: '30px', md: '30px', sm: '30px', xs: '28px' }, fontWeight: '600', m: '20px', color: MAIN_COLOR }}>Our Stats</Typography>
                         <Typography sx={{ fontSize: { lg: '18px', md: '18px', sm: '16px', xs: '15px' }, textAlign: 'center', fontFamily: 'Comfortaa", cursive', mt: '20px', color: 'grey' }}>We are proud of what we have achieved and the recognition we have received from our clients and the industry. Our stats showcase our commitment to excellence.</Typography>
                     </Grid>
